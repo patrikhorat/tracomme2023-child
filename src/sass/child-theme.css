@@ -15096,6 +15096,11 @@ figure.woocommerce-product-gallery__wrapper {
   height: 130px;
 }
 
+.bg-primary {
+  color: green !important;
+  background-color: aqua !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
