@@ -1,4 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px !important; // Grundschriftart 
+}
+
+// Logo Grösse definieren
+.custom-logo-link > img {
+    width: 95px;
+}
 .bg-primary {
-    color: green !important;
-    background-color: rgb(209, 136, 41) !important;
+    background-color: #fff !important;
+}
+
+#wrapper-navbar {
+    box-shadow: 0px 3px 3px $shadowbg01;
+}
+#main-menu {
+    font-weight: 700;
+  }
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1.25em;
+}
+.navbar-light {
+--bs-navbar-color: #000000;
+--bs-navbar-hover-color: #0060AF;
+--bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+--bs-navbar-active-color: #0060AF;
+--bs-navbar-brand-color: #0060AF;
+--bs-navbar-brand-hover-color: #0060AF;
+--bs-navbar-toggler-border-color: none;
+--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.linkbutton {
+    border: none;
+    background-color: $primary;
+    border-radius: 21px;
+    opacity: 1;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-weight: 600;
+    color: #fff;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    a, a:hover, a:focus {
+        color: white;
+    }
+}
+.ms-center {
+    margin:auto;
+}
+
+.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+.flexgrownull {
+    flex-grow: 0;
+}
+
+.languagebar {
+    height: 35px;
+    background: $lightgreybg;
+}
+
+/* Language Menu Customization */
+.wpml-ls {
+    margin-left: auto !important; // Right Align
+    font-size: 14px;
+    padding-top: 3px;
+    font-weight: 600;
+}
+/**/
+.wpml-ls-legacy-dropdown-click {
+    width: 7em;
+    .wpml-ls-sub-menu {
+        border: none !important;
+        background: $primary;
+        padding-bottom: 2px;
+        a, a:hover, a:focus {
+            color: #fff !important;
+        }
+    }
+}
+.wpml-ls-legacy-dropdown-click a, .wpml-ls-legacy-dropdown-click a:hover, .wpml-ls-legacy-dropdown-click a:focus {
+    border: none;
+    background-color: transparent !important;
+    color: $primary !important;
 }

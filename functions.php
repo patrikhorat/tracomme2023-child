@@ -86,3 +86,13 @@ function tracomme2023_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'tracomme2023_child_customize_controls_js' );
+
+
+/* Add Additional Menus to Theme */
+function register_childtheme_menus() {
+	register_nav_menu('contact_menu', __( 'Contact Menu', 'tracomme2023-child' ));
+	//register_nav_menu('language_menu', __( 'Language Menu', 'tracomme2023-child' ));
+  }
+  
+  add_action( 'init', 'register_childtheme_menus' );
+

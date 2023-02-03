@@ -11,9 +11,16 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
-
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
-
+<div class="languagebar">
+	<div class="container">
+		<?php
+		/* Custom Language Switcher */
+		do_action('wpml_add_language_selector');			
+		?>
+	</div>
+</div>
+<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-primary" aria-labelledby="main-nav-label">
+	
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'tracomme2023' ); ?>
 	</h2>
@@ -43,10 +50,23 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 				'theme_location'  => 'primary',
 				'container_class' => 'collapse navbar-collapse',
 				'container_id'    => 'navbarNavDropdown',
-				'menu_class'      => 'navbar-nav ms-auto',
+				'menu_class'      => 'navbar-nav ms-center',
 				'fallback_cb'     => '',
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,
+				'walker'          => new Tracomme2023_WP_Bootstrap_Navwalker(),
+			)
+		);
+
+		wp_nav_menu(
+			array(
+				'theme_location'  => 'contact_menu',
+				'container_class' => 'collapse navbar-collapse flexgrownull',
+				'container_id'    => 'navbarNavDropdown',
+				'menu_class'      => 'navbar-nav ms-auto',
+				'fallback_cb'     => '',
+				'menu_id'         => 'contact_menu',
+				'depth'           => 1,
 				'walker'          => new Tracomme2023_WP_Bootstrap_Navwalker(),
 			)
 		);
