@@ -18,7 +18,9 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 	<?php 	// Get the Content Box for the Forum Header
-            $contentbox = get_page_by_title( 'Footer', '', 'content-boxen' );
+
+            $contentbox = get_page_by_path( 'footer', '', 'content-boxen' );
+            //$contentbox = get_page_by_path( 'footer-en', '', 'content-boxen' );
             $contentboxid = $contentbox->ID;
             $post_contentbox = get_post($contentboxid);
             $content_contentbox = $post_contentbox->post_content;
