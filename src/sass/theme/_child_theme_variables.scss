@@ -4,5 +4,19 @@
 
 
 $primary: #0060AF; // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: #002e54;
 $shadowbg01: #00000029;
 $lightgreybg: #F3F3F3;
+
+
+/* screen / container sizes */
+$extralargescreen: 1400px;
+$extralargescreencontainer: 1320px;
+$largescreen: 1200px;
+$largescreencontainer: 1140px;
+$mediumscreen: 992px;
+$mediumscreencontainer: 960px;
+$smallscreen: 768px;
+$smallscreencontainer: 720px;
+$extrasmallscreen: 576px;
+$extrasmallscreencontainer: 540px;

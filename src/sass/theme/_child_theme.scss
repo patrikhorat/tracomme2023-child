@@ -89,3 +89,68 @@ body {
     background-color: transparent !important;
     color: $primary !important;
 }
+
+
+/* Developement WPML Bar remove*/
+.otgs-development-site-front-end {
+    display: none;
+}
+/* Everything FOOTER */
+#wrapper-footer {
+    padding-bottom: 0px !important;
+}
+/* Styling Footer Row */
+.footerrowbg {
+    background-color: $primary;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footerrowheading {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footerrowtext {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+.footerrowtext a {
+    color: #fff;
+    text-decoration: none;
+}
+.footerrowtext a:hover {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+.footerrowtextsmall {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 50px;
+}
+/* Styling Copyright Row */
+.copyrightrowbg {
+    background-color: $secondary;
+}
+.copyrightrow {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.copyrightrow a {
+    text-decoration: none;
+    color: #fff;
+}
+.copyrightrow a:hover {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+.copyrightrightalign {
+    text-align: right;
+    @media (max-width: $smallscreen){
+        text-align: left;
+        }
+}

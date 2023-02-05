@@ -13,29 +13,19 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php tracomme2023_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!-- col -->
-
-		</div><!-- .row -->
+	<?php 	// Get the Content Box for the Forum Header
+            $contentbox = get_page_by_title( 'Footer', '', 'content-boxen' );
+            $contentboxid = $contentbox->ID;
+            $post_contentbox = get_post($contentboxid);
+            $content_contentbox = $post_contentbox->post_content;
+            echo do_shortcode($content_contentbox);
+    
+	?>
+	
 
 	</div><!-- .container(-fluid) -->
 

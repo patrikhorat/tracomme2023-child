@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* screen / container sizes */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -30,7 +31,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #0060AF;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #002e54;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -38,7 +39,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 0, 96, 175;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 0, 46, 84;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -1832,13 +1833,13 @@ progress {
 
 .table-secondary {
   --bs-table-color: #000;
-  --bs-table-bg: #e2e3e5;
-  --bs-table-border-color: #cbccce;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #ccd5dd;
+  --bs-table-border-color: #b8c0c7;
+  --bs-table-striped-bg: #c2cad2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #b8c0c7;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #bdc5cc;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3671,19 +3672,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-bg: #002e54;
+  --bs-btn-border-color: #002e54;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
-  --bs-btn-hover-border-color: #565e64;
-  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-hover-bg: #002747;
+  --bs-btn-hover-border-color: #002543;
+  --bs-btn-focus-shadow-rgb: 38, 77, 110;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
-  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-bg: #002543;
+  --bs-btn-active-border-color: #00233f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-bg: #002e54;
+  --bs-btn-disabled-border-color: #002e54;
 }
 
 .btn-success, .woocommerce-notices-wrapper .woocommerce-message a.button {
@@ -3806,19 +3807,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #6c757d;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-color: #002e54;
+  --bs-btn-border-color: #002e54;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #6c757d;
-  --bs-btn-hover-border-color: #6c757d;
-  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-hover-bg: #002e54;
+  --bs-btn-hover-border-color: #002e54;
+  --bs-btn-focus-shadow-rgb: 0, 46, 84;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6c757d;
-  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-active-bg: #002e54;
+  --bs-btn-active-border-color: #002e54;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-color: #002e54;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #6c757d;
+  --bs-btn-disabled-border-color: #002e54;
   --bs-gradient: none;
 }
 
@@ -5528,12 +5529,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  --bs-alert-color: #41464b;
-  --bs-alert-bg: #e2e3e5;
-  --bs-alert-border-color: #d3d6d8;
+  --bs-alert-color: #001c32;
+  --bs-alert-bg: #ccd5dd;
+  --bs-alert-border-color: #b3c0cc;
 }
 .alert-secondary .alert-link {
-  color: #34383c;
+  color: #001628;
 }
 
 .alert-success, .woocommerce-notices-wrapper .woocommerce-message {
@@ -5905,17 +5906,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-secondary {
-  color: #41464b;
-  background-color: #e2e3e5;
+  color: #001c32;
+  background-color: #ccd5dd;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #41464b;
-  background-color: #cbccce;
+  color: #001c32;
+  background-color: #b8c0c7;
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #41464b;
-  border-color: #41464b;
+  background-color: #001c32;
+  border-color: #001c32;
 }
 
 .list-group-item-success {
@@ -7566,7 +7567,7 @@ textarea.form-control-lg {
 
 .text-bg-secondary {
   color: #fff !important;
-  background-color: RGBA(108, 117, 125, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(0, 46, 84, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -7607,10 +7608,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #6c757d !important;
+  color: #002e54 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64 !important;
+  color: #002543 !important;
 }
 
 .link-success {
@@ -15187,6 +15188,84 @@ body {
   color: #0060AF !important;
 }
 
+/* Developement WPML Bar remove*/
+.otgs-development-site-front-end {
+  display: none;
+}
+
+/* Everything FOOTER */
+#wrapper-footer {
+  padding-bottom: 0px !important;
+}
+
+/* Styling Footer Row */
+.footerrowbg {
+  background-color: #0060AF;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footerrowheading {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footerrowtext {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+.footerrowtext a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerrowtext a:hover {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.footerrowtextsmall {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  padding-right: 50px;
+}
+
+/* Styling Copyright Row */
+.copyrightrowbg {
+  background-color: #002e54;
+}
+
+.copyrightrow {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.copyrightrow a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyrightrow a:hover {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.copyrightrightalign {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .copyrightrightalign {
+    text-align: left;
+  }
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
@@ -15399,16 +15478,16 @@ body {
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #002e54;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #002e54;
+  border-color: #002e54;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-secondary-color {
-  color: #6c757d;
+  color: #002e54;
 }
 
 .has-success-color,
