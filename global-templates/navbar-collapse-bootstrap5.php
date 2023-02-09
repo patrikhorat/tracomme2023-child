@@ -19,7 +19,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 		?>
 	</div>
 </div>
-<nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-primary" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-primary" aria-labelledby="main-nav-label">
 	
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'tracomme2023' ); ?>
