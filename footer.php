@@ -17,10 +17,18 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-	<?php 	// Get the Content Box for the Forum Header
-
-            //$contentbox = get_page_by_path( 'footer', '', 'content-boxen' );
-            $contentbox = get_page_by_path( 'footer-en', '', 'content-boxen' );
+	<?php 	// Get the Content Box for Footer in correct language or German
+            $my_current_lang = apply_filters( 'wpml_current_language', NULL );
+            if ($my_current_lang == "de") {
+                $contentbox = get_page_by_path( 'footer', '', 'content-boxen' );
+            }
+            else if ($my_current_lang == "en")
+            {
+                $contentbox = get_page_by_path( 'footer-en', '', 'content-boxen' );
+            }
+            else {
+                $contentbox = get_page_by_path( 'footer', '', 'content-boxen' );
+            }
             $contentboxid = $contentbox->ID;
             $post_contentbox = get_post($contentboxid);
             $content_contentbox = $post_contentbox->post_content;

@@ -26,6 +26,7 @@ $navbar_type       = get_theme_mod( 'tracomme2023_navbar_type', 'collapse' );
 </head>
 
 <body <?php body_class(); ?> <?php tracomme2023_body_attributes(); ?>>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63e9140143a352d9"></script>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 

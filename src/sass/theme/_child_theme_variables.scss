@@ -7,6 +7,7 @@ $primary: #0060AF; // Once we've changed the value, we'll also make it the prima
 $secondary: #002e54;
 $shadowbg01: #00000029;
 $lightgreybg: #F3F3F3;
+$lightgreyhover: #c7c7c7;
 
 
 /* screen / container sizes */
@@ -20,3 +21,36 @@ $smallscreen: 768px;
 $smallscreencontainer: 720px;
 $extrasmallscreen: 576px;
 $extrasmallscreencontainer: 540px;
+
+
+/* Mixin Settings */
+$media-direction:       min;
+$breakpoints: (
+  'default':            '',
+  'xs':                 576px,
+  's':                  768px,
+  'm':                  992px,
+  'l':                  1200px,
+  'xl':                 1400px,
+);
+@mixin breakpoint($breakpoint,$direction: $media-direction) {
+
+    // Es wird gecheckt ob der Wert in der Sass Map vorhanden ist
+    @if map-has-key($breakpoints, $breakpoint) {
+  
+      // Ausgabe
+      @media (#{$direction}-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+  
+    // Wenn ihr oben einen Wert eingetragen habt wird hier gecheckt ob ihr einen Einheit angehängt habt. Falls nicht wird px genutzt.
+    @else if unitless($breakpoint) {
+      $breakpoint: $breakpoint + 0px;
+  
+      // Ausgabe
+      @media (#{$direction}-width: $breakpoint) {
+        @content;
+      }
+    }
+  };

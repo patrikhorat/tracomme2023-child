@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* screen / container sizes */
+/* Mixin Settings */
 *,
 *::before,
 *::after {
@@ -379,11 +380,6 @@ legend + * {
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
 }
 
 ::file-selector-button {
@@ -1073,14 +1069,12 @@ progress {
 }
 
 .sticky-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
 }
 
 .sticky-bottom {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   z-index: 1020;
@@ -1088,13 +1082,11 @@ progress {
 
 @media (min-width: 576px) {
   .sticky-sm-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-sm-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -1102,13 +1094,11 @@ progress {
 }
 @media (min-width: 768px) {
   .sticky-md-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-md-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -1116,13 +1106,11 @@ progress {
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-lg-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -1130,13 +1118,11 @@ progress {
 }
 @media (min-width: 1200px) {
   .sticky-xl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-xl-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -1144,13 +1130,11 @@ progress {
 }
 @media (min-width: 1400px) {
   .sticky-xxl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
   }
   .sticky-xxl-bottom {
-    position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     z-index: 1020;
@@ -1353,7 +1337,6 @@ progress {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -2503,14 +2486,12 @@ progress {
 .user-select-auto {
   -webkit-user-select: auto !important;
      -moz-user-select: auto !important;
-      -ms-user-select: auto !important;
           user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
-      -ms-user-select: none !important;
           user-select: none !important;
 }
 
@@ -5446,41 +5427,41 @@ body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-co
 }
 @media (min-width: 576px) {
   body.tracomme2023-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   body.tracomme2023-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
   body.tracomme2023-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
   body.tracomme2023-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
   body.tracomme2023-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.tracomme2023-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.tracomme2023-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 1320px;
   }
 }
@@ -5492,7 +5473,7 @@ body.tracomme2023-no-sidebar .wp-block-cover.alignwide {
 }
 @media (max-width: 920px) {
   body.tracomme2023-no-sidebar .alignwide,
-body.tracomme2023-no-sidebar .wp-block-cover.alignwide {
+  body.tracomme2023-no-sidebar .wp-block-cover.alignwide {
     margin: 0 calc(50% - 48vw);
     max-width: 96vw;
     width: 100vw;
