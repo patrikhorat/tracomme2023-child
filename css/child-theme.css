@@ -14975,6 +14975,14 @@ body {
   font-size: 1rem !important;
 }
 
+.styledark {
+  color: #ffffff;
+}
+
+.stylelight {
+  color: #0060AF;
+}
+
 h1.page-title, .page-title.h1 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -15098,6 +15106,12 @@ h2.page-subtitle, .page-subtitle.h2 {
 /* Everything FOOTER */
 #wrapper-footer {
   padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
+/* Page Wrapper */
+#page-wrapper {
+  padding-bottom: 0px;
 }
 
 /* Styling Footer Row */
@@ -15309,6 +15323,7 @@ h2.page-subtitle, .page-subtitle.h2 {
 /* Single News */
 .single-news-page {
   padding-top: 0;
+  padding-bottom: 0;
   background-color: #F3F3F3;
 }
 
@@ -15509,6 +15524,14 @@ h1.news-single-h1-title, .news-single-h1-title.h1 {
 
 .page-link {
   color: #0060AF;
+}
+
+/* Teaser Box */
+.teaser-box {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 4rem;
+  padding-bottom: 0px;
 }
 
 .has-blue-color,

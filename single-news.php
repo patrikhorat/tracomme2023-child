@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 
 <div class="wrapper single-news-page" id="single-wrapper">
@@ -28,16 +28,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 			?>
 
 		</main><!-- #main -->
-		<div class="teaser-box">Hier kommt der Teaser!!!
-		<?php 	// Get the Content Box for the Forum Header
-				/*$contentbox = get_page_by_title( 'Teaser Box - News Single', '', 'content-boxen' );
+			<div class="teaser-box">
+				<?php 	// Get the Content Box for Footer in correct language or German
+				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+				if ($my_current_lang == "de") {
+					$contentbox = get_page_by_path( 'teaser-news-single', '', 'content-boxen' );
+				}
+				else if ($my_current_lang == "en")
+				{
+					$contentbox = get_page_by_path( 'teaser-news-single-en', '', 'content-boxen' );
+				}
+				else {
+					$contentbox = get_page_by_path( 'teaser-news-single', '', 'content-boxen' );
+				}
 				$contentboxid = $contentbox->ID;
 				$post_contentbox = get_post($contentboxid);
 				$content_contentbox = $post_contentbox->post_content;
 				echo do_shortcode($content_contentbox);
-				*/
-		?>
-		</div>
+				?>
+			</div>
 
 	</div><!-- #content -->
 

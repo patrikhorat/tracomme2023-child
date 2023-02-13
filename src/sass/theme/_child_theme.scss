@@ -5,6 +5,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem !important; // Grundschriftart 
 }
+
+.styledark {
+    color: #ffffff;
+}
+.stylelight {
+    color: $primary;
+}
+
 h1.page-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -119,7 +127,13 @@ h2.page-subtitle {
 /* Everything FOOTER */
 #wrapper-footer {
     padding-bottom: 0px !important;
+    padding-top: 0px !important;
 }
+/* Page Wrapper */
+#page-wrapper {
+    padding-bottom: 0px;
+}
+
 /* Styling Footer Row */
 .footerrowbg {
     background-color: $primary;
@@ -303,6 +317,7 @@ h2.page-subtitle {
 /* Single News */
 .single-news-page {
     padding-top: 0;
+    padding-bottom: 0;
     background-color: $lightgreybg;
 }
 
@@ -503,4 +518,12 @@ h1.news-single-h1-title {
 .page-link {
     //border: none;
     color: $primary;
+}
+
+/* Teaser Box */
+.teaser-box {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 4rem;
+    padding-bottom: 0px;
 }
