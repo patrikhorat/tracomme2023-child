@@ -15286,6 +15286,7 @@ h2.page-subtitle, .page-subtitle.h2 {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+  padding-right: 1.25rem;
 }
 @media (max-width: 992px) {
   .news-preview {

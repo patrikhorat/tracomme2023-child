@@ -283,6 +283,7 @@ h2.page-subtitle {
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
+        padding-right: 1.25rem;
     }
     @media (max-width: $mediumscreen){
         width: 100%;
