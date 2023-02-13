@@ -33,6 +33,9 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 						<header class="page-header">
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
+							echo '<h2 class="page-subtitle">';
+							esc_attr_e( 'News, Events, More', 'tracomme2023-child' );
+							echo '</h2>';
 							?>
 							<div class="addthis-container margin-bottom-16 addthisleft">
 								<div class="addthis_inline_share_toolbox"></div>
@@ -56,6 +59,9 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 					?>
 
 				</main><!-- #main -->
+				<?php
+				tracomme2023child_pagination();
+				?>
 			<div class="teaser-box">Hier kommt der Teaser!!!
 			<?php 	// Get the Content Box
 			/*

@@ -1,15 +1,11 @@
-@charset "UTF-8";
-/* screen / container sizes */
-/* Mixin Settings */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.components-circular-option-picker__option {
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
+.editor-post-title .editor-post-title__input {
+  font-size: 2.5rem;
+  font-weight: 700;
+}/*# sourceMappingURL=custom-editor-style.css.map */;
   }
 }
 

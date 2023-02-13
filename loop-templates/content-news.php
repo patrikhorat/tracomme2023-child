@@ -28,11 +28,8 @@ defined( 'ABSPATH' ) || exit;
 				?>
 				</header><!-- .entry-header -->
 				<div class="news-excerpt">
-
 					<?php
 					the_excerpt();
-					
-					//understrap_link_pages();
 					?>
 				</div>
 			</div><!-- .entry-content -->
