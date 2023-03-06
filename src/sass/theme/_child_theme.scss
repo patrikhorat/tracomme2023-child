@@ -101,7 +101,6 @@ h2.page-subtitle {
     padding-top: 3px;
     font-weight: 600;
 }
-/**/
 .wpml-ls-legacy-dropdown-click {
     width: 6.1rem;
     .wpml-ls-sub-menu {
@@ -119,7 +118,6 @@ h2.page-subtitle {
     color: $primary !important;
 }
 
-
 /* Developement WPML Bar remove*/
 .otgs-development-site-front-end {
     display: none;
@@ -128,6 +126,25 @@ h2.page-subtitle {
 #wrapper-footer {
     padding-bottom: 0px !important;
     padding-top: 0px !important;
+}
+.footericon {
+    margin-bottom: 0px !important;
+    @media (max-width: $smallscreen){
+        text-align: left !important;
+        }
+}
+.footericon > div {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    border: none !important;
+    top: -0.75em !important;
+    height: 3em !important;
+    width: 3em !important;
+    @media (max-width: $smallscreen){
+        text-align: left !important;
+        width: 2em !important;
+        }
 }
 /* Page Wrapper */
 #page-wrapper {
