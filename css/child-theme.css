@@ -15135,6 +15135,7 @@ h2.page-subtitle, .page-subtitle.h2 {
 
 /* Page Wrapper */
 #page-wrapper {
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
