@@ -10,24 +10,24 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-	<div class="news-wrapper">
-		<div class="news-vorschaubild">
+	<div class="eventsexpertise-wrapper">
+		<div class="eventsexpertise-vorschaubild">
 			<?php echo '<a href="'.esc_url( get_permalink() ).'" rel="bookmark">'; ?>
-			<?php echo get_the_post_thumbnail( $post->ID, 'news-archive-image' ); ?>
+			<?php echo get_the_post_thumbnail( $post->ID, 'eventsexpertise-archive-image' ); ?>
 			<?php echo '</a>'; ?>
 		</div>
-		<div class="news-preview">
-			<div class="news-preview-content">
+		<div class="eventsexpertise-preview">
+			<div class="eventsexpertise-preview-content">
 				<header class="entry-header">
-				<div class="news-date"><?php echo get_the_date(); ?></div>
+				<div class="eventsexpertise-date"><?php echo get_the_date(); ?></div>
 				<?php
 				the_title(
-					sprintf( '<h3 class="news-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+					sprintf( '<h3 class="eventsexpertise-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 					'</a></h3>'
 				);
 				?>
 				</header><!-- .entry-header -->
-				<div class="news-excerpt">
+				<div class="eventsexpertise-excerpt">
 					<?php
 					the_excerpt();
 					?>

@@ -269,8 +269,8 @@ h2.page-subtitle {
     content: "\f054";
 }
 
-/* styling for news */
-.news-wrapper {
+/* styling for events & expertise */
+.eventsexpertise-wrapper {
     display: flex;
     flex-direction: row;
     padding-top: 0.75em;
@@ -280,7 +280,7 @@ h2.page-subtitle {
     }
 
 }
-.news-vorschaubild {
+.eventsexpertise-vorschaubild {
     width: 45%;
     @media (max-width: $mediumscreen){
         width: 100%;
@@ -291,12 +291,12 @@ h2.page-subtitle {
     }
     
 }
-.news-preview {
+.eventsexpertise-preview {
     width: 55%;
     background: $lightgreybg;
     padding: 1.25rem;
     position: relative;
-    .news-preview-content {
+    .eventsexpertise-preview-content {
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
@@ -305,7 +305,7 @@ h2.page-subtitle {
     @media (max-width: $mediumscreen){
         width: 100%;
         // zentrierung vertikal
-        .news-preview-content {
+        .eventsexpertise-preview-content {
             top: 0;
             transform: none;
             position: relative;
@@ -313,39 +313,39 @@ h2.page-subtitle {
         
     }
 }
-.news-date {
+.eventsexpertise-date {
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 3px;
 }
-.news-title {
+.eventsexpertise-title {
     font-size: 1.625rem;
     font-weight: 700;
     margin-top: 0;
 }
-.news-title a {
+.eventsexpertise-title a {
     text-decoration: none;
 }
-.news-excerpt {
+.eventsexpertise-excerpt {
     font-size: 1rem;
     font-weight: 400;
     margin-right: 0.75em;
 }
 
-/* Single News */
-.single-news-page {
+/* Single eventsexpertise */
+.single-eventsexpertise-page {
     padding-top: 0;
     padding-bottom: 0;
     background-color: $lightgreybg;
 }
 
-h1.news-single-h1-title {
+h1.eventsexpertise-single-h1-title {
     font-size: 2.25em;
     text-transform: none;
     font-weight: 700;
 }
 
-#news-single-header-wrapper {
+#eventsexpertise-single-header-wrapper {
     position: relative;
     box-sizing: border-box;
     left: calc(50% - 100vw/2);
@@ -358,7 +358,7 @@ h1.news-single-h1-title {
     height: 40vh;
     margin-bottom: -4.5rem;
 }
-.news-single-header-image {
+.eventsexpertise-single-header-image {
     position: absolute;
     background-size: cover;
     background-repeat: repeat;
@@ -370,7 +370,7 @@ h1.news-single-h1-title {
     bottom: 0;
     right: 0;
     left: 0;
-    .news-single-image-overlay {
+    .eventsexpertise-single-image-overlay {
         background: $primary;
         opacity: 0.5;
         color: inherit;
@@ -381,7 +381,7 @@ h1.news-single-h1-title {
         top: 0;
     }
 }
-.news-single-header-info-wrapper {
+.eventsexpertise-single-header-info-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -390,16 +390,16 @@ h1.news-single-h1-title {
     max-width: $mediumscreen;
     padding-top: 0;
     padding-bottom: 0;
-    .news-single-header-meta-infobox {
+    .eventsexpertise-single-header-meta-infobox {
         padding-bottom: 1rem;
         @media (min-width: $smallscreen){
             padding: 1rem 3rem 1rem 3rem;
         }
-        .news-single-header-meta-info {
+        .eventsexpertise-single-header-meta-info {
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
             font-weight: 400;
-            .news-tag-single-page {
+            .eventsexpertise-tag-single-page {
                 color: white;
                 border-radius: 2rem;
                 text-transform: uppercase;
@@ -413,11 +413,11 @@ h1.news-single-h1-title {
                 box-shadow: 0px 3px 3px #00000029;
                 display: inline-block;
             }
-            .news-tag-single-page a {
+            .eventsexpertise-tag-single-page a {
                 color: white;
                 text-decoration: none;
             }
-            .news-single-header-meta-info-date {
+            .eventsexpertise-single-header-meta-info-date {
                 font-size: 1rem;
                 font-weight: 600;
                 padding-top: 0.25em;
@@ -428,7 +428,7 @@ h1.news-single-h1-title {
 
 }
 
-#news-single-content-wrapper {
+#eventsexpertise-single-content-wrapper {
     background: white;
     box-shadow: 0px 3px 3px #00000029;
     position: relative;
@@ -449,7 +449,7 @@ h1.news-single-h1-title {
         margin-top: 1.5em;
         margin-bottom: 0.5em;
     }
-    .news-lead {
+    .eventsexpertise-lead {
         text-align: center;
         p {
             font-size: 1.1em;

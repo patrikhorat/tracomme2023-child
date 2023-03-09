@@ -148,8 +148,8 @@ function change_vc_button_colors() {
 
 /* Events&Expertise Image */
 /* Image Size for "Online Artikel" Archive & Single Page */
-add_image_size( 'news-archive-image', 960, 600, true );
-add_image_size( 'news-single-image', 1920, 800, true );
+add_image_size( 'eventsexpertise-archive-image', 960, 600, true );
+add_image_size( 'eventsexpertise-single-image', 1920, 800, true );
 
 
 // get rid of the “Category:”, “Tag:”, “Author:”, “Archives:” and “Other taxonomy name:”

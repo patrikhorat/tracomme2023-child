@@ -12,7 +12,7 @@ get_header();
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 
-<div class="wrapper single-news-page" id="single-wrapper">
+<div class="wrapper single-eventsexpertise-page" id="single-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
@@ -32,14 +32,14 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 				<?php 	// Get the Content Box for Footer in correct language or German
 				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 				if ($my_current_lang == "de") {
-					$contentbox = get_page_by_path( 'teaser-news-single', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-eventsexpertise-single', '', 'content-boxen' );
 				}
 				else if ($my_current_lang == "en")
 				{
-					$contentbox = get_page_by_path( 'teaser-news-single-en', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-eventsexpertise-single-en', '', 'content-boxen' );
 				}
 				else {
-					$contentbox = get_page_by_path( 'teaser-news-single', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-eventsexpertise-single', '', 'content-boxen' );
 				}
 				$contentboxid = $contentbox->ID;
 				$post_contentbox = get_post($contentboxid);
