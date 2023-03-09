@@ -15559,6 +15559,15 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding-bottom: 0px;
 }
 
+/* Icons für Dienstleistungen Fachgebiete etc. */
+.tracommeiconlarge {
+  font-size: 1.25rem !important;
+}
+
+.tracommeiconlarge > div {
+  width: 6em !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
