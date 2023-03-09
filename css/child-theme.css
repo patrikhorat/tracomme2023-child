@@ -15002,6 +15002,12 @@ h2.frontpage-sectiontitle, .frontpage-sectiontitle.h2 {
   padding-bottom: 0.5rem;
 }
 
+h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
 .custom-logo-link > img {
   width: 95px;
 }
