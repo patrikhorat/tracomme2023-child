@@ -14996,6 +14996,12 @@ h2.page-subtitle, .page-subtitle.h2 {
   padding-bottom: 0.5rem;
 }
 
+h2.frontpage-sectiontitle, .frontpage-sectiontitle.h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
 .custom-logo-link > img {
   width: 95px;
 }
@@ -15566,6 +15572,14 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
 }
 
 .tracommeiconlarge > div {
+  width: 6em !important;
+}
+
+.tracommeiconmedium {
+  font-size: 1rem !important;
+}
+
+.tracommeiconmedium > div {
   width: 6em !important;
 }
 

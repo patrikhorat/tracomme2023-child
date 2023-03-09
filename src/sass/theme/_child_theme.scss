@@ -24,6 +24,11 @@ h2.page-subtitle {
     font-weight: 400;
     padding-bottom: 0.5rem;
 }
+h2.frontpage-sectiontitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
 // Logo Grösse definieren
 .custom-logo-link > img {
     width: 95px;
@@ -552,5 +557,11 @@ h1.eventsexpertise-single-h1-title {
     font-size: 1.25rem !important;
 }
 .tracommeiconlarge > div {
+    width: 6em !important;
+}
+.tracommeiconmedium {
+    font-size: 0.75rem !important;
+}
+.tracommeiconmedium > div {
     width: 6em !important;
 }
