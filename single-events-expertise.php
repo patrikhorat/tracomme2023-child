@@ -21,7 +21,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 			<?php
 			while ( have_posts() ) {
 				the_post();
-				get_template_part( 'loop-templates/content', 'single-news' );
+				get_template_part( 'loop-templates/content', 'single-events-expertise' );
 				?>
 				<?php	
 			}

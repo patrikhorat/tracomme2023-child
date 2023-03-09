@@ -146,7 +146,7 @@ function change_vc_button_colors() {
 }
 
 
-/* News Image */
+/* Events&Expertise Image */
 /* Image Size for "Online Artikel" Archive & Single Page */
 add_image_size( 'news-archive-image', 960, 600, true );
 add_image_size( 'news-single-image', 1920, 800, true );
@@ -297,3 +297,4 @@ if ( ! function_exists( 'tracomme2023child_pagination' ) ) {
 		<?php
 	}
 }
+
