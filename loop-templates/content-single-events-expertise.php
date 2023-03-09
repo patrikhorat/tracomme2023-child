@@ -7,6 +7,14 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+
+//Get post type    
+$post_type = get_post_type();
+$post_type_obj = get_post_type_object( get_post_type() );
+
+//Get post type's label
+$archive_title = apply_filters('post_type_archive_title', $post_type_obj->labels->name );
+$archive_link = apply_filters('get_post_type_archive_link', $post_type );
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -23,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="entry-meta eventsexpertise-single-header-info-wrapper">
 			<div class="eventsexpertise-single-header-meta-infobox">
 				<div class="eventsexpertise-single-header-meta-info">
-					<div class="eventsexpertise-tag-single-page"><a href="/eventsexpertise" title="News ???">News ???</a>
+					<div class="eventsexpertise-tag-single-page"><a href="/<?php echo $archive_link; ?>" title="<?php echo $archive_title; ?>"><?php echo $archive_title; ?></a>
 					</div>
 					<div class="eventsexpertise-single-header-meta-info">
 						<?php the_title( '<h1 class="entry-title eventsexpertise-single-h1-title">', '</h1>' ); ?>
