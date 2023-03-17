@@ -15262,6 +15262,24 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   font-weight: 700;
 }
 
+.read-more-link > .vc_btn3.vc_btn3-size-md {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.read-more-link > .vc_btn3.vc_btn3-size-md::after {
+  font-family: "FontAwesome";
+  font-weight: 400;
+  padding-left: 0.875rem;
+  font-size: 0.75rem;
+  content: "\f054";
+}
+
 .tracomme2023-read-more-link {
   font-size: 0.75rem;
   font-weight: 700;
