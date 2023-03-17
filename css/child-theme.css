@@ -15590,6 +15590,12 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   font-weight: 700;
 }
 
+.eventsexpertise-sectiontitle {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+}
+
 /* Icons für Dienstleistungen Fachgebiete etc. */
 .tracommeiconlarge {
   font-size: 1.25rem !important;
