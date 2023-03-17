@@ -29,7 +29,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 		</main><!-- #main -->
 			<div class="teaser-box">
-				<?php 	// Get the Content Box for Footer in correct language or German
+				<?php 	// Get the Content Box for Teaser in correct language or German
 				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 				if ($my_current_lang == "de") {
 					$contentbox = get_page_by_path( 'teaser-eventsexpertise-single', '', 'content-boxen' );

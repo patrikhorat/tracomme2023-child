@@ -23,59 +23,44 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 				<main class="site-main" id="main">
 
-					<section class="error-404 not-found">
-
-						<header class="page-header">
-
-							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'tracomme2023' ); ?></h1>
-
-						</header><!-- .page-header -->
-
-						<div class="page-content">
-
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'tracomme2023' ); ?></p>
-
-							<?php get_search_form(); ?>
-
-							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-							<?php if ( tracomme2023_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-
-								<div class="widget widget_categories">
-
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'tracomme2023' ); ?></h2>
-
-									<ul>
-										<?php
-										wp_list_categories(
-											array(
-												'orderby'  => 'count',
-												'order'    => 'DESC',
-												'show_count' => 1,
-												'title_li' => '',
-												'number'   => 10,
-											)
-										);
-										?>
-									</ul>
-
-								</div><!-- .widget -->
-
-							<?php endif; ?>
-
-							<?php
-
-							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'tracomme2023' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-							the_widget( 'WP_Widget_Tag_Cloud' );
-							?>
-
-						</div><!-- .page-content -->
-
-					</section><!-- .error-404 -->
-
+					<div class="teaser-box">
+						<?php 	// Get the Content Box for 404 in correct language or German
+						$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+						if ($my_current_lang == "de") {
+							$contentboxerror = get_page_by_path( '404-error-page', '', 'content-boxen' );
+						}
+						else if ($my_current_lang == "en")
+						{
+							$contentboxerror = get_page_by_path( '404-error-page-en', '', 'content-boxen' );
+						}
+						else {
+							$contentboxerror = get_page_by_path( '404-error-page', '', 'content-boxen' );
+						}
+						$contentboxiderror = $contentboxerror->ID;
+						$post_contentboxerror = get_post($contentboxiderror);
+						$content_contentboxerror = $post_contentboxerror->post_content;
+						echo do_shortcode($content_contentboxerror);
+						?>
+					</div>
+					<div class="teaser-box">
+						<?php 	// Get the Content Box for Teaser in correct language or German
+						$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+						if ($my_current_lang == "de") {
+							$contentbox = get_page_by_path( 'teaser-eventsexpertise', '', 'content-boxen' );
+						}
+						else if ($my_current_lang == "en")
+						{
+							$contentbox = get_page_by_path( 'teaser-eventsexpertise-en', '', 'content-boxen' );
+						}
+						else {
+							$contentbox = get_page_by_path( 'teaser-eventsexpertise', '', 'content-boxen' );
+						}
+						$contentboxid = $contentbox->ID;
+						$post_contentbox = get_post($contentboxid);
+						$content_contentbox = $post_contentbox->post_content;
+						echo do_shortcode($content_contentbox);
+						?>
+					</div>
 				</main>
 
 			</div><!-- #primary -->

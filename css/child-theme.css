@@ -15287,6 +15287,11 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   content: "\f054";
 }
 
+/* Everything 404 Error Page */
+#error-404-wrapper {
+  padding: 0;
+}
+
 /* styling for events & expertise */
 .eventsexpertise-wrapper {
   display: flex;
@@ -15568,7 +15573,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
 .teaser-box {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 4rem;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
