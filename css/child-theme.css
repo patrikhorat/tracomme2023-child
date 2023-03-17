@@ -15585,7 +15585,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding: 1rem;
 }
 
-.eventsexpertise-title {
+.eventsexpertise-title > h3, .eventsexpertise-title > .h3 {
   font-size: 1em;
   font-weight: 700;
 }
