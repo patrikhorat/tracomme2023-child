@@ -15581,6 +15581,15 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding-bottom: 0px;
 }
 
+.eventsexpertise-teaser {
+  padding: 1rem;
+}
+
+.eventsexpertise-title {
+  font-size: 1em;
+  font-weight: 700;
+}
+
 /* Icons für Dienstleistungen Fachgebiete etc. */
 .tracommeiconlarge {
   font-size: 1.25rem !important;
