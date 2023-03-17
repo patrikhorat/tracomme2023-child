@@ -15315,6 +15315,10 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 }
 
 /* styling for events & expertise */
+.eventsexpertise-archive-maincontent {
+  margin-bottom: 4rem;
+}
+
 .eventsexpertise-wrapper {
   display: flex;
   flex-direction: row;
@@ -15491,6 +15495,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   max-width: 992px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4rem;
   padding: 2em;
 }
 @media (min-width: 768px) {

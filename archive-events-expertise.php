@@ -25,7 +25,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 		<div class="row">
 
-				<main class="site-main" id="main">
+				<main class="site-main eventsexpertise-archive-maincontent" id="main">
 
 					<?php
 					if ( have_posts() ) {
@@ -56,12 +56,11 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 					} else {
 						get_template_part( 'loop-templates/content', 'none' );
 					}
-					?>
 
-				</main><!-- #main -->
-				<?php
 				tracomme2023child_pagination();
 				?>
+				</main><!-- #main -->
+				
 			<div class="teaser-box">
 				<?php 	// Get the Content Box for Footer in correct language or German
 				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
