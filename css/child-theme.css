@@ -15167,6 +15167,11 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   font-size: 1rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .footerrowheading {
+    margin-top: 1.5rem !important;
+  }
+}
 
 .footerrowtext {
   color: #fff;
