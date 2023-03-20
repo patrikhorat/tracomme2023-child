@@ -2,7 +2,7 @@
 /**
  * The header for our theme
  *
- * Displays all of the <head> section and everything up till <div id="content"> TEMP
+ * Displays all of the <head> section and everything up till <div id="content"> OK
  *
  * @package Tracomme2023
  */
