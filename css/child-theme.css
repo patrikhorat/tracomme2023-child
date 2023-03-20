@@ -15663,6 +15663,18 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   }
 }
 
+/* Everything Partner */
+@media (max-width: 768px) {
+  .tracommepartnerlogo {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.tracommepartnerlogo > * > * > .wpb_single_image {
+  padding: 1rem !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

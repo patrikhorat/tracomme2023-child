@@ -633,3 +633,15 @@ h1.eventsexpertise-single-h1-title {
         padding-bottom: 1rem !important;
         }
 }
+
+
+/* Everything Partner */
+.tracommepartnerlogo {
+    @media (max-width: $smallscreen){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        }
+}
+.tracommepartnerlogo > * > * > .wpb_single_image {
+    padding: 1rem !important;
+}
