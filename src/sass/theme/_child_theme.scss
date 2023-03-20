@@ -611,3 +611,25 @@ h1.eventsexpertise-single-h1-title {
 .tracommeiconmedium > div {
     width: 6em !important;
 }
+
+/* Bluebox, Overview Dienstleistungen/Fachgebiete */
+.bluebox {
+    color: #ffffff;
+    @media (max-width: $smallscreen){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        }
+}
+.bluebox > .vc_column-inner {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 1.5rem !important;
+    background-color: $primary !important;
+    @media (max-width: $smallscreen){
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 1rem !important;
+        }
+}
