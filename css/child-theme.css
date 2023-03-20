@@ -15675,6 +15675,58 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding: 1rem !important;
 }
 
+/* Everything Kontakt-Formular */
+.wpcf7-form label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #002e54;
+}
+
+.contactdropdown {
+  color: green !important;
+}
+
+.contactformbox {
+  color: #000000 !important;
+  border: 3px solid #002e54 !important;
+  border-radius: 0 !important;
+}
+
+.contactformbutton {
+  color: #000000 !important;
+  border: 3px solid #002e54 !important;
+  border-radius: 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+  color: #b30000 !important;
+}
+
+.wpcf7-response-output {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  border: 3px solid #b30000 !important;
+}
+
+.wpcf7-submit {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  width: 180px !important;
+  max-width: 300px !important;
+  border: none !important;
+  background: #002e54 !important;
+  border-radius: 3rem !important;
+  padding: 0.75rem !important;
+}
+
+.wpcf7-spinner {
+  top: 0.75rem !important;
+  height: 2rem !important;
+  width: 2rem !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
