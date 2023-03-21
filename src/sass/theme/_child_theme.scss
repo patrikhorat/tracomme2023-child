@@ -694,3 +694,18 @@ h1.eventsexpertise-single-h1-title {
     height: 2rem !important;
     width: 2rem !important;
 }
+
+
+/* Header Image Dienstleistungen / Fachgebiete */
+.themeheaderimage {
+    min-height: 600px;
+    @media (max-width: $largescreen){
+        min-height: 500px;
+        }
+    @media (max-width: $mediumscreen){
+        min-height: 400px;
+        }
+    @media (max-width: $smallscreen){
+        min-height: 300px;
+        }
+}

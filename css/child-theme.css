@@ -15732,6 +15732,26 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   width: 2rem !important;
 }
 
+/* Header Image Dienstleistungen / Fachgebiete */
+.themeheaderimage {
+  min-height: 600px;
+}
+@media (max-width: 1200px) {
+  .themeheaderimage {
+    min-height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .themeheaderimage {
+    min-height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .themeheaderimage {
+    min-height: 300px;
+  }
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
