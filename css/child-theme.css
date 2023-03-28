@@ -15149,6 +15149,21 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   }
 }
 
+.footerwpmenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.footerwpmenu ul {
+  padding-left: 0rem !important;
+}
+
+.footerwpmenu li {
+  list-style: none !important;
+}
+
 /* Page Wrapper */
 #page-wrapper {
   padding-top: 0px;
