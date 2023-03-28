@@ -15718,6 +15718,10 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   border-radius: 0 !important;
 }
 
+.contacticon {
+  margin-right: 0.5rem;
+}
+
 .wpcf7-not-valid-tip {
   color: #b30000 !important;
 }
