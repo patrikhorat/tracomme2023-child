@@ -15642,30 +15642,45 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
 }
 
 /* Bluebox, Overview Dienstleistungen/Fachgebiete etc. */
-.bluebox {
+.overviewbox {
   color: #ffffff;
 }
 @media (max-width: 768px) {
-  .bluebox {
+  .overviewbox {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
 
-.bluebox > .vc_column-inner {
+.overviewbox > .vc_column-inner {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   padding-top: 3rem !important;
   padding-bottom: 1.5rem !important;
-  background-color: #0060AF !important;
 }
 @media (max-width: 768px) {
-  .bluebox > .vc_column-inner {
+  .overviewbox > .vc_column-inner {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     padding-top: 2rem !important;
     padding-bottom: 1rem !important;
   }
+}
+
+.bluebox > .vc_column-inner {
+  background-color: #0060AF !important;
+}
+
+.darkbluebox > .vc_column-inner {
+  background-color: #002e54 !important;
+}
+
+.darkgreenbox > .vc_column-inner {
+  background-color: #04470a !important;
+}
+
+.darkredbox > .vc_column-inner {
+  background-color: #610000 !important;
 }
 
 /* Everything Partner */
