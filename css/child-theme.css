@@ -15043,6 +15043,10 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.current-menu-item a, .current-page-ancestor a {
+  color: #0060AF !important;
+}
+
 .linkbutton {
   border: none;
   background-color: #0060AF;
@@ -15784,6 +15788,17 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   .themeheaderimage {
     min-height: 300px;
   }
+}
+
+/* Breadcrumbs */
+.tracommebreadcrumbs {
+  margin-bottom: 0 !important;
+  margin-top: 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.tracommebreadcrumbs a {
+  text-decoration: none !important;
 }
 
 .has-blue-color,
