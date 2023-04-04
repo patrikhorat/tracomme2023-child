@@ -30,7 +30,7 @@ $navbar_type       = get_theme_mod( 'tracomme2023_navbar_type', 'collapse' );
 <script>
 jQuery(document).ready(function($) {
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 10) { 
+        if ($(window).scrollTop() > 20) { 
             $('.navbar-brand').addClass('shrinklogo');
         }
         else{
