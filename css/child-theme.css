@@ -15013,7 +15013,9 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 }
 
 .custom-logo-link > img {
-  width: 95px;
+  width: 190px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .bg-primary {
