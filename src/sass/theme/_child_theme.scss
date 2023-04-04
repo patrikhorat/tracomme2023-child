@@ -705,6 +705,9 @@ h1.eventsexpertise-single-h1-title {
     border: 3px solid $secondary !important;
     border-radius: 0 !important;
 }
+.contactformlistitems > .first {
+    margin-left: 0;
+}
 .contacticon {
     margin-right: 0.5rem;
 }
