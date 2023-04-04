@@ -31,10 +31,10 @@ $navbar_type       = get_theme_mod( 'tracomme2023_navbar_type', 'collapse' );
 jQuery(document).ready(function($) {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 10) { 
-            $('.navbar-brand').addClass('shrink');
+            $('.navbar-brand').addClass('shrinklogo');
         }
         else{
-            $('.navbar-brand').removeClass('shrink');
+            $('.navbar-brand').removeClass('shrinklogo');
         }
     });
 });
