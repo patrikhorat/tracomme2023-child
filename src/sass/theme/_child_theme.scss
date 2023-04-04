@@ -42,7 +42,14 @@ h3.frontpage-subsectiontitle {
     width: 190px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    transition-duration: 0.5s;
 }
+.shrinklogo > img {
+    width: 95px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
 .bg-primary {
     background-color: #fff !important;
 }
