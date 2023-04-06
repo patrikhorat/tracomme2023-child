@@ -1,23 +1,26 @@
 // Menu Logo Resize
-const header = document.querySelector(".navbar-brand");
-const sectionOne = document.querySelector("h1");
+const logolocator = document.querySelector(".navbar-brand");
+const ShrinkMenu = document.querySelector(".shrinkstart");
 
-const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+const ShrinkMenuOptions = {
+  rootMargin: "-110px 0px 0px 0px"
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
+const ShrinkMenuObserver = new IntersectionObserver(function(
   entries,
-  sectionOneObserver
+  ShrinkMenuObserver
 ) {
+  
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
-      header.classList.add("shrinklogo");
+      logolocator.classList.add("shrinklogo");
     } else {
-      header.classList.remove("shrinklogo");
+      logolocator.classList.remove("shrinklogo");
     }
   });
 },
-sectionOneOptions);
+ShrinkMenuOptions);
+ShrinkMenubserver.observe(ShrinkMenu);
 
-sectionOneObserver.observe(sectionOne);
+
+

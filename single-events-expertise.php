@@ -12,7 +12,8 @@ get_header();
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 
-<div class="wrapper single-eventsexpertise-page" id="single-wrapper">
+<div class="wrapper single-eventsexpertise-page" id="page-wrapper">
+	<div class="shrinkstart"></div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
