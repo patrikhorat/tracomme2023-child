@@ -20,7 +20,7 @@ const ShrinkMenuObserver = new IntersectionObserver(function(
   });
 },
 ShrinkMenuOptions);
-ShrinkMenubserver.observe(ShrinkMenu);
+ShrinkMenuObserver.observe(ShrinkMenu);
 
 
 
