@@ -27,18 +27,6 @@ $navbar_type       = get_theme_mod( 'tracomme2023_navbar_type', 'collapse' );
 
 <body <?php body_class(); ?> <?php tracomme2023_body_attributes(); ?>>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63e9140143a352d9"></script>
-<script>
-jQuery(document).ready(function($) {
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 200) { 
-            $('.navbar-brand').addClass('shrinklogo');
-        }
-        else{
-            $('.navbar-brand').removeClass('shrinklogo');
-        }
-    });
-});
-</script>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 

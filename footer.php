@@ -45,7 +45,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/observers.js"></script>
 </body>
 
 </html>

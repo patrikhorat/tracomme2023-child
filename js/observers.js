@@ -1,8 +1,6 @@
-// Add your custom JS here.
-
 // Menu Logo Resize
 const header = document.querySelector(".navbar-brand");
-const sectionOne = document.querySelector("page-wrapper");
+const sectionOne = document.querySelector("h1");
 
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px"
