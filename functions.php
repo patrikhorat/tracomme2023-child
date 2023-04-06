@@ -298,3 +298,5 @@ if ( ! function_exists( 'tracomme2023child_pagination' ) ) {
 	}
 }
 
+/* Read More remove from excerpt  */
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
