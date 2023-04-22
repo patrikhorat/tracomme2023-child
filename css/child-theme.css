@@ -15834,6 +15834,10 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding: 0.75rem !important;
 }
 
+.wpcf7-submit:hover {
+  background: #0060AF !important;
+}
+
 .wpcf7-spinner {
   top: 0.75rem !important;
   height: 2rem !important;
