@@ -106,16 +106,16 @@ function change_vc_button_colors() {
 	//Get current values stored in the color param in "Call to Action" element
 		$param = WPBMap::getParam( 'vc_btn', 'color' );
 	
-	// Add New Colors to the 'value' array
-	// btn-custom-1 and btn-custom-2 are the new classes that will be 
-	// applied to your buttons, and you can add your own style declarations
-	// to your stylesheet to style them the way you want.
-		$param['value'][__( 'Tracomme Blue', 'tracomme2023-child' )] = 'btn-tracomme-blue';
-		$param['value'][__( 'Tracomme Dark Blue', 'tracomme2023-child' )] = 'btn-tracomme-darkblue';
-		$param['value'][__( 'Tracomme White', 'tracomme2023-child' )] = 'btn-tracomme-white';
-		$param['value'][__( 'Tracomme Light Grey', 'tracomme2023-child' )] = 'btn-tracomme-lightgrey';
+	// New Button Styles
+		$param['value'][__( 'Tracomme White - Dark Blue', 'tracomme2023-child' )] = 'btn-tracomme-white-darkblue';
+		$param['value'][__( 'Tracomme White - Blue', 'tracomme2023-child' )] = 'btn-tracomme-white-blue';
+		$param['value'][__( 'Tracomme Black - Blue', 'tracomme2023-child' )] = 'btn-tracomme-black-blue';
+		$param['value'][__( 'Tracomme Blue - Dark Blue', 'tracomme2023-child' )] = 'btn-tracomme-blue-darkblue';
+		$param['value'][__( 'Tracomme Dark Blue - Blue', 'tracomme2023-child' )] = 'btn-tracomme-darkblue-blue';
+		$param['value'][__( 'Tracomme Light Grey - Blue', 'tracomme2023-child' )] = 'btn-tracomme-lightgrey-blue';
+		$param['value'][__( 'Tracomme Light Grey - Dark Blue', 'tracomme2023-child' )] = 'btn-tracomme-lightgrey-darkblue';
 	
-	// Remove any colors you don't want to use.
+	// Remove colors not needed
 		unset($param['value']['Classic Grey']);
 		unset($param['value']['Classic Blue']);
 		unset($param['value']['Classic Turquoise']);

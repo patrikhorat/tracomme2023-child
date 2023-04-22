@@ -104,6 +104,9 @@ h3.frontpage-subsectiontitle {
         padding-bottom: 0;
         }
 }
+.linkbutton:hover {
+    background-color: $secondary !important;
+}
 .ms-center {
     margin:auto;
 }
@@ -262,30 +265,75 @@ h3.frontpage-subsectiontitle {
 }
 
 // Buttons
-.vc_btn3-color-btn-tracomme-blue {
-    background-color: $primary !important;
-    border-color: transparent !important;
-    color: #ffffff !important;
-    font-weight: 700;
-}
-.vc_btn3-color-btn-tracomme-darkblue {
-    background-color: $secondary !important;
-    border-color: transparent !important;
-    color: #ffffff !important;
-    font-weight: 700;
-}
-.vc_btn3-color-btn-tracomme-white {
+.vc_btn3-color-btn-tracomme-white-darkblue {
     background-color: #ffffff !important;
     border-color: transparent !important;
     color: $secondary !important;
     font-weight: 700;
 }
-.vc_btn3-color-btn-tracomme-lightgrey {
+.vc_btn3-color-btn-tracomme-white-darkblue:hover {
+    background-color: $secondary !important;
+    color: #ffffff !important;
+}
+.vc_btn3-color-btn-tracomme-white-blue {
+    background-color: #ffffff !important;
+    border-color: transparent !important;
+    color: $secondary !important;
+    font-weight: 700;
+}
+.vc_btn3-color-btn-tracomme-white-blue:hover {
+    background-color: $primary !important;
+    color: #ffffff !important;
+}
+.vc_btn3-color-btn-tracomme-black-blue {
+    background-color: #000000 !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.vc_btn3-color-btn-tracomme-black-blue:hover {
+    background-color: $primary !important;
+}
+.vc_btn3-color-btn-tracomme-blue-darkblue {
+    background-color: $primary !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.vc_btn3-color-btn-tracomme-blue-darkblue:hover {
+    background-color: $secondary !important;
+}
+
+.vc_btn3-color-btn-tracomme-darkblue-blue {
+    background-color: $secondary !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.vc_btn3-color-btn-tracomme-darkblue-blue:hover {
+    background-color: $primary !important;
+}
+.vc_btn3-color-btn-tracomme-lightgrey-blue {
     background-color: $lightgreybg !important;
     border-color: transparent !important;
     color: $secondary !important;
     font-weight: 700;
 }
+.vc_btn3-color-btn-tracomme-lightgrey-blue:hover {
+    background-color: $primary !important;
+    color: #ffffff !important;
+}
+.vc_btn3-color-btn-tracomme-lightgrey-darkblue {
+    background-color: $lightgreybg !important;
+    border-color: transparent !important;
+    color: $secondary !important;
+    font-weight: 700;
+}
+.vc_btn3-color-btn-tracomme-lightgrey-darkblue:hover {
+    background-color: $secondary !important;
+    color: #ffffff !important;
+}
+
 .read-more-link > .vc_btn3.vc_btn3-size-md {
     font-size: 0.75rem;
     font-weight: 700;
