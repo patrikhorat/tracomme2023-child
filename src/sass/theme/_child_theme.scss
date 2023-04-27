@@ -3,7 +3,11 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem !important; // Grundschriftart 
+    font-size: 1rem !important; // Grundschriftart
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .styledark {
