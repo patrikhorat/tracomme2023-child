@@ -32,6 +32,9 @@ h2.page-subtitle {
     font-size: 2.5rem;
     font-weight: 400;
     padding-bottom: 0.5rem;
+    @media (max-width: $smallscreen){
+        font-size: 2rem;
+        }
 
 }
 h2.frontpage-sectiontitle {
