@@ -703,11 +703,13 @@ h1.eventsexpertise-single-h1-title {
 .infobox-subpage {
     color: #ffffff;
     @media (max-width: $smallscreen){
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
         }
 }
 .infobox-subpage > .vc_column-inner {
+    box-shadow: 0px 3px 3px $shadowbg01;
+    text-align: center;
     padding-left: 3rem !important;
     padding-right: 3rem !important;
     padding-top: 3rem !important;
