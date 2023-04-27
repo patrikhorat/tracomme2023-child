@@ -14986,6 +14986,12 @@ body {
   color: #000000;
 }
 
+.hyphenate {
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 h1.page-title, .page-title.h1 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -15874,6 +15880,24 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
 .tracommebreadcrumbs a {
   text-decoration: none !important;
   color: #000000 !important;
+}
+
+/* Info Boxes*/
+@media (max-width: 768px) {
+  .frontpage-infobox {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+.frontpage-infobox > .vc_column-inner {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-top: 2.5rem !important;
+  padding-bottom: 1rem !important;
+  text-align: center !important;
+  margin-top: 0px !important;
 }
 
 .has-blue-color,
