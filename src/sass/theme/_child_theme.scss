@@ -857,8 +857,8 @@ h1.eventsexpertise-single-h1-title {
 /* Info Boxes*/
 .frontpage-infobox {
 @media (max-width: $smallscreen){
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     }
 }
 .frontpage-infobox > .vc_column-inner {
@@ -868,5 +868,4 @@ h1.eventsexpertise-single-h1-title {
     padding-top: 2.5rem !important;
     padding-bottom: 1rem !important;
     text-align: center !important;
-    margin-top: 0px !important;
 }

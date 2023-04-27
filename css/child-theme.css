@@ -15922,8 +15922,8 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
 /* Info Boxes*/
 @media (max-width: 768px) {
   .frontpage-infobox {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -15934,7 +15934,6 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding-top: 2.5rem !important;
   padding-bottom: 1rem !important;
   text-align: center !important;
-  margin-top: 0px !important;
 }
 
 .has-blue-color,
