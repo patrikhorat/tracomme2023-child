@@ -297,6 +297,63 @@ if ( ! function_exists( 'tracomme2023child_pagination' ) ) {
 		<?php
 	}
 }
+?>
 
+<?php
 /* Read More remove from excerpt  */
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+?>
+<?php
+/* TAXONOMIEN ausgeben als Button Intern und Externe Links  */
+
+if ( ! function_exists( 'tracomme_get_the_term_buttons_intern' ) ) {
+
+/**
+ * Function to return list of the terms.
+ * 
+ * @param string 'taxonomy'
+ * 
+ * @return html Returns the list of elements.
+ */
+
+function tracomme_get_the_term_buttons_intern( $taxonomy ) {
+	$terms = get_the_terms( get_the_ID(), $taxonomy );
+	if ( $terms && ! is_wp_error( $terms ) ) : 
+	
+		$term_tag_objects = array();
+		foreach ( $terms as $term ) {
+			//$term_tag_objects[] = '<div class="produkte-tag-single-page">' . __( $term->name ) . '</div>';
+			$term_tag_objects[] = '<div class="produkte-tag-single-page"><a href="' . __( $term->description ). '">' . __( $term->name ) . '</a></div>';
+		}				
+		$all_terms = join( '', $term_tag_objects );
+		echo __( $all_terms );
+	endif;
+}
+}
+
+if ( ! function_exists( 'tracomme_get_the_term_buttons_extern' ) ) {
+
+	/**
+	 * Function to return list of the terms.
+	 * 
+	 * @param string 'taxonomy'
+	 * 
+	 * @return html Returns the list of elements.
+	 */
+	
+	function tracomme_get_the_term_buttons_extern( $taxonomy ) {
+		$terms = get_the_terms( get_the_ID(), $taxonomy );
+		if ( $terms && ! is_wp_error( $terms ) ) : 
+		
+			$term_tag_objects = array();
+			foreach ( $terms as $term ) {
+				//$term_tag_objects[] = '<div class="produkte-tag-single-page">' . __( $term->name ) . '</div>';
+				$term_tag_objects[] = '<div class="produkte-tag-single-page"><a href="' . __( $term->description ). '" target="_blank">' . __( $term->name ) . '</a></div>';
+			}				
+			$all_terms = join( '', $term_tag_objects );
+			echo __( $all_terms );
+		endif;
+	}
+	}
+
+?>

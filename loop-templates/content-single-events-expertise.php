@@ -2,7 +2,7 @@
 /**
  * Single post partial template
  *
- * @package digitalclusteruri
+ * @package Tracomme2023
  */
 
 // Exit if accessed directly.
@@ -24,6 +24,7 @@ $archive_link = apply_filters('get_post_type_archive_link', $post_type );
 			<div class="eventsexpertise-single-header-image" style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID, 'eventsexpertise-single-image' ); ?>)";>
 				<div class="eventsexpertise-single-image-overlay"></div>
 			</div>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div id="eventsexpertise-single-content-wrapper" class="entry-content">

@@ -12,7 +12,7 @@ get_header();
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 
-<div class="wrapper single-eventsexpertise-page" id="page-wrapper">
+<div class="wrapper single-produkte-page" id="page-wrapper">
 	<div class="shrinkstart"></div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
@@ -22,7 +22,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 			<?php
 			while ( have_posts() ) {
 				the_post();
-				get_template_part( 'loop-templates/content', 'single-events-expertise' );
+				get_template_part( 'loop-templates/content', 'single-produkte' );
 				?>
 				<?php	
 			}
