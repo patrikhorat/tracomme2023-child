@@ -150,6 +150,7 @@ function change_vc_button_colors() {
 /* Image Size for "Online Artikel" Archive & Single Page */
 add_image_size( 'eventsexpertise-archive-image', 960, 600, true );
 add_image_size( 'eventsexpertise-single-image', 1920, 800, true );
+add_image_size( 'produkte-featured-image', 960, 960, true );
 
 
 // get rid of the “Category:”, “Tag:”, “Author:”, “Archives:” and “Other taxonomy name:”
