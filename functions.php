@@ -298,13 +298,10 @@ if ( ! function_exists( 'tracomme2023child_pagination' ) ) {
 		<?php
 	}
 }
-?>
 
-<?php
 /* Read More remove from excerpt  */
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-?>
-<?php
+
 /* TAXONOMIEN ausgeben als Button Intern und Externe Links  */
 
 if ( ! function_exists( 'tracomme_get_the_term_buttons_intern' ) ) {
