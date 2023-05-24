@@ -40,10 +40,10 @@ $produkt_subtitle = get_post_meta(get_the_ID(), 'produkt_subtitle', TRUE);
 			<div class="produkte-single-header-meta-infobox">
 				<div class="produkte-single-header-meta-info">
 					<?php 
-						tracomme_get_the_term_buttons_extern( 'brand' );
+						//tracomme_get_the_term_buttons_extern( 'brand' );
 						tracomme_get_the_term_buttons_intern( 'fachgebiete-hauptkategorie' );
 						tracomme_get_the_term_buttons_intern( 'fachgebiete-unterkategorie' );
-						tracomme_get_the_term_buttons_extern( 'productcategory' );
+						tracomme_get_the_term_buttons_intern( 'productcategory' );
 					?>
 				</div>
 			</div>
