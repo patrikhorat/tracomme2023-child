@@ -15071,6 +15071,9 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 #main-menu .current-menu-item a, #main-menu .current-page-ancestor a {
   color: #0060AF !important;
 }
+#main-menu .current-menu-item a.black, #main-menu .current-page-ancestor a.black {
+  color: #000000 !important;
+}
 
 .linkbutton {
   border: none;
