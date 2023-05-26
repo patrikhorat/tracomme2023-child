@@ -91,7 +91,7 @@ h3.frontpage-subsectiontitle {
     .current-menu-item a, .current-page-ancestor a {
         color: $primary !important;
     }
-    .current-menu-item a.black, .current-page-ancestor a.black {
+    .current-menu-item.black a, .current-page-ancestor.black a {
         color: #000000 !important;
     }
 }
