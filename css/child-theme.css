@@ -16153,16 +16153,20 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   padding: 0px !important;
 }
 
-.subpage-grid a::before {
-  font-family: "FontAwesome";
-  font-weight: 400;
-  padding-right: 0.8rem;
-  font-size: 1rem;
-  content: "\f0c8";
-}
-
+/*.subpage-grid a::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    padding-right: 0.8rem;
+    font-size: 1rem;
+    content: "\f0c8";
+}*/
 .subpage-grid a {
   font-size: 1.25rem;
+  color: #0060AF;
+}
+
+.subpage-grid a:hover {
+  color: #002e54;
 }
 
 .has-blue-color,

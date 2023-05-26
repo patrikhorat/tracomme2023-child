@@ -1076,13 +1076,17 @@ h1.produkte-single-h1-title {
 .subpage-grid .vc_gitem-col {
     padding: 0px !important;
 }
-.subpage-grid a::before {
+/*.subpage-grid a::before {
     font-family: "FontAwesome";
     font-weight: 400;
     padding-right: 0.8rem;
     font-size: 1rem;
     content: "\f0c8";
-}
+}*/
 .subpage-grid a {
     font-size: 1.25rem;
+    color: $primary;
+}
+.subpage-grid a:hover {
+    color: $secondary;
 }
