@@ -1064,3 +1064,25 @@ h1.produkte-single-h1-title {
     padding-bottom: 1rem !important;
     text-align: center !important;
 }
+
+
+/* Subpage-Post-Grid */
+.subpage-grid {
+    padding-bottom: 0.2rem !important;
+}
+.subpage-grid .vc_gitem-post-data-source-post_title {
+    margin-bottom: 0px !important;
+}
+.subpage-grid .vc_gitem-col {
+    padding: 0px !important;
+}
+.subpage-grid a::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    padding-right: 0.8rem;
+    font-size: 1rem;
+    content: "\f0c8";
+}
+.subpage-grid a {
+    font-size: 1.25rem;
+}
