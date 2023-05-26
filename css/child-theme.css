@@ -16153,20 +16153,26 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   padding: 0px !important;
 }
 
-/*.subpage-grid a::before {
-    font-family: "FontAwesome";
-    font-weight: 400;
-    padding-right: 0.8rem;
-    font-size: 1rem;
-    content: "\f0c8";
-}*/
+.subpage-grid .vc_gitem-zone-c {
+  width: 100% !important;
+}
+
+.subpage-grid a::before {
+  font-family: "FontAwesome";
+  font-weight: 400;
+  padding-right: 0.8rem;
+  font-size: 1rem;
+  content: "\f0c8";
+}
+
 .subpage-grid a {
-  font-size: 1.25rem;
-  color: #0060AF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0060AF !important;
 }
 
 .subpage-grid a:hover {
-  color: #002e54;
+  color: #002e54 !important;
 }
 
 .has-blue-color,
