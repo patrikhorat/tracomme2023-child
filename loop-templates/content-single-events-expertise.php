@@ -49,8 +49,8 @@ $archive_link = apply_filters('get_post_type_archive_link', $post_type );
 			</div>
 		</div><!-- .entry-meta -->
 
-		<div class="addthis-container margin-bottom-50">
-			<div class="addthis_inline_share_toolbox"></div>
+		<div class="sharethis-container margin-bottom-50 sharethiscenter">
+		<div class="sharethis-inline-share-buttons"></div>
 		</div>
 		<?php
 		the_content();

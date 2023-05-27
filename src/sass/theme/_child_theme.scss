@@ -788,7 +788,7 @@ h1.produkte-single-h1-title {
 }
 
 
-/* AddThis Styling */
+/* ShareThis Styling */
 .margin-bottom-50 {
     margin-bottom: 3.125rem;
 }
@@ -796,58 +796,11 @@ h1.produkte-single-h1-title {
     margin-bottom: 1rem;
 }
 
-.addthis-container {
-    display: block;
-    text-align: center !important;
+.sharethis-container {
     background-color: transparent;
-
-  
-    .addthis_inline_share_toolbox {
-      a {
-        border-radius: 666 !important;
-        background-color: $primary !important;
-        margin: 0 5px !important;
-  
-        @include breakpoint('s') {
-          margin: 0 3px !important;
-        }
-  
-        .at-icon-wrapper {
-          height: 1.5rem !important;
-          width: 1.5rem !important;
-          line-height: 1.5rem !important;
-  
-          svg {
-            height: 1.5rem !important;
-            width: 1.5rem !important;
-            line-height: 1.5rem !important;
-          }
-        }
-  
-        @include breakpoint('s') {
-          .at-icon-wrapper {
-            height: 1.75rem !important;
-            width: 1.75rem !important;
-            line-height: 1.75rem !important;
-  
-            svg {
-              height: 1.75rem !important;
-              width: 1.75rem !important;
-              line-height: 1.75rem !important;
-            }
-          }
-        }
-      }
-    }
-  
-    &__left {
-      @extend .addthis-container;
-      text-align: left !important;
-    }
 }
-.addthisleft {
-    text-align: left !important;
-    margin-left: -5px;
+.sharethiscenter > .sharethis-inline-share-buttons {
+    text-align: center !important;
 } 
 
 /* everything pagination */

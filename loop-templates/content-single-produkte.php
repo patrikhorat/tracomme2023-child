@@ -26,7 +26,7 @@ $produkt_subtitle = get_post_meta(get_the_ID(), 'produkt_subtitle', TRUE);
 			</div>
 			<div class="produkte-single-title">
 				<div class="produkte-single-title-text-content">
-					<div class="addthis-container margin-bottom-16 addthisleft">
+					<div class="sharethis-container margin-bottom-16">
 					<div class="sharethis-inline-share-buttons"></div>
 					</div>
 					<?php the_title( '<h1 class="entry-title produkte-single-h1-title">', '</h1>' ); ?>

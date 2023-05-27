@@ -38,8 +38,8 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 							esc_attr_e( 'News, Events, More', 'tracomme2023-child' );
 							echo '</h2>';
 							?>
-							<div class="addthis-container margin-bottom-16 addthisleft">
-								<div class="addthis_inline_share_toolbox"></div>
+							<div class="sharethis-container margin-bottom-16">
+							<div class="sharethis-inline-share-buttons"></div>
 							</div>
 						</header><!-- .page-header -->
 						<?php  

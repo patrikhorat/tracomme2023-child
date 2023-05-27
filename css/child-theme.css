@@ -15834,7 +15834,7 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   padding-bottom: 0.5rem;
 }
 
-/* AddThis Styling */
+/* ShareThis Styling */
 .margin-bottom-50 {
   margin-bottom: 3.125rem;
 }
@@ -15843,50 +15843,12 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   margin-bottom: 1rem;
 }
 
-.addthis-container, .addthis-container__left {
-  display: block;
-  text-align: center !important;
+.sharethis-container {
   background-color: transparent;
 }
-.addthis-container .addthis_inline_share_toolbox a, .addthis-container__left .addthis_inline_share_toolbox a {
-  border-radius: 666 !important;
-  background-color: #0060AF !important;
-  margin: 0 5px !important;
-}
-@media (min-width: 768px) {
-  .addthis-container .addthis_inline_share_toolbox a, .addthis-container__left .addthis_inline_share_toolbox a {
-    margin: 0 3px !important;
-  }
-}
-.addthis-container .addthis_inline_share_toolbox a .at-icon-wrapper, .addthis-container__left .addthis_inline_share_toolbox a .at-icon-wrapper {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
-  line-height: 1.5rem !important;
-}
-.addthis-container .addthis_inline_share_toolbox a .at-icon-wrapper svg, .addthis-container__left .addthis_inline_share_toolbox a .at-icon-wrapper svg {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
-  line-height: 1.5rem !important;
-}
-@media (min-width: 768px) {
-  .addthis-container .addthis_inline_share_toolbox a .at-icon-wrapper, .addthis-container__left .addthis_inline_share_toolbox a .at-icon-wrapper {
-    height: 1.75rem !important;
-    width: 1.75rem !important;
-    line-height: 1.75rem !important;
-  }
-  .addthis-container .addthis_inline_share_toolbox a .at-icon-wrapper svg, .addthis-container__left .addthis_inline_share_toolbox a .at-icon-wrapper svg {
-    height: 1.75rem !important;
-    width: 1.75rem !important;
-    line-height: 1.75rem !important;
-  }
-}
-.addthis-container__left {
-  text-align: left !important;
-}
 
-.addthisleft {
-  text-align: left !important;
-  margin-left: -5px;
+.sharethiscenter > .sharethis-inline-share-buttons {
+  text-align: center !important;
 }
 
 /* everything pagination */

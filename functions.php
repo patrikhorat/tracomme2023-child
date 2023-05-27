@@ -181,27 +181,27 @@ add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
   remove_filter('term_description','wpautop');
 
 
-/* Create Shortcode for AddThis addthisshortcode */
- function addthisleft16_shortcode_func() { 
+/* Create Shortcode for ShareThis sharethisshortcode */
+ function sharethisleft16_shortcode_func() { 
   
 // HTML code für shortcode
-return '<div class="addthis-container margin-bottom-16 addthisleft">
-<div class="addthis_inline_share_toolbox"></div>
+return '<div class="sharethis-container margin-bottom-16 sharethisleft">
+<div class="sharethis-inline-share-buttons"></div>
 </div>';
 
 }
 // Register shortcode
-add_shortcode('addthisleft16', 'addthisleft16_shortcode_func'); 
+add_shortcode('sharethisleft16', 'sharethisleft16_shortcode_func'); 
 
-function addthiscenter16_shortcode_func() { 
+function sharethiscenter16_shortcode_func() { 
 	
 // HTML code für shortcode
-return '<div class="addthis-container margin-bottom-16">
-<div class="addthis_inline_share_toolbox"></div>
+return '<div class="sharethis-container margin-bottom-16">
+<div class="sharethis-inline-share-buttons"></div>
 </div>';
 }
 // Register shortcode
-add_shortcode('addthiscenter16', 'addthiscenter16_shortcode_func'); 
+add_shortcode('sharethiscenter16', 'sharethiscenter16_shortcode_func'); 
 
 
 // Child Theme Pagination
