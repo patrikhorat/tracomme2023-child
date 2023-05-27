@@ -15074,6 +15074,9 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 #main-menu .current-menu-item.black a, #main-menu .current-page-ancestor.black a {
   color: #000000 !important;
 }
+#main-menu .current-menu-item.black a:hover, #main-menu .current-page-ancestor.black a:hover {
+  color: #0060AF !important;
+}
 
 .linkbutton {
   border: none;

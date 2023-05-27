@@ -94,6 +94,9 @@ h3.frontpage-subsectiontitle {
     .current-menu-item.black a, .current-page-ancestor.black a {
         color: #000000 !important;
     }
+    .current-menu-item.black a:hover, .current-page-ancestor.black a:hover {
+        color: $primary !important;
+    }
 }
 
 .linkbutton {
