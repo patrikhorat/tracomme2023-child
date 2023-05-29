@@ -36,7 +36,7 @@ $fachwissen_file = get_post_meta($post->ID, 'fachwissen_file', true);
 		<div class="entry-meta fachwissen-single-header-info-wrapper">
 			<div class="fachwissen-single-header-meta-infobox">
 				<div class="fachwissen-single-header-meta-info">
-					<div class="fachwissen-tag-single-page"><a href="/<?php echo $archive_link; ?>" title="<?php echo $archive_title; ?>"><?php echo $archive_title; ?></a>
+					<div class="fachwissen-tag-single-page"><a href="<?php echo $archive_link; ?>" title="<?php echo $archive_title; ?>"><?php echo $archive_title; ?></a>
 					</div>
 					<div class="fachwissen-single-header-meta-info">
 						<?php the_title( '<h1 class="entry-title fachwissen-single-h1-title">', '</h1>' ); ?>
