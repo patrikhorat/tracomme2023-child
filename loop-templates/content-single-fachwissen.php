@@ -40,7 +40,7 @@ $fachwissen_file = get_post_meta($post->ID, 'fachwissen_file', true);
 					<div class="fachwissen-single-header-meta-info">
 						<?php the_title( '<h1 class="entry-title fachwissen-single-h1-title">', '</h1>' ); ?>
 					</div>
-					<div class="fachwissen-tag-single-page"><a href="<?php echo $fachwissen_file; ?>" title="<?php esc_attr_e( 'Download PDF', 'tracomme2023-child' ); ?>"><?php esc_attr_e( 'Download Article', 'tracomme2023-child' ); ?></a>
+					<div class="fachwissen-tag-single-page"><a href="<?php echo $fachwissen_file; ?>" title="<?php esc_attr_e( 'Download PDF', 'tracomme2023-child' ); ?>"><?php esc_attr_e( 'Download PDF', 'tracomme2023-child' ); ?></a>
 					</div>
 				</div>
 			</div>
