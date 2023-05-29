@@ -15426,95 +15426,64 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   padding: 0;
 }
 
-/* styling for events & expertise */
-.eventsexpertise-archive-maincontent {
+/* styling for fachwissen */
+.fachwissen-archive-maincontent {
   margin-bottom: 4rem;
 }
 
-.eventsexpertise-wrapper {
-  display: flex;
-  flex-direction: row;
-  padding-top: 0.75em;
+.fachwissen-wrapper {
+  display: grid;
+  grid-template-columns: 100px auto;
+  padding-top: 1.5em;
   padding-bottom: 0;
 }
-@media (max-width: 992px) {
-  .eventsexpertise-wrapper {
-    flex-direction: column;
-  }
+
+.fachwissen-vorschaubild {
+  width: 100px;
 }
 
-.eventsexpertise-vorschaubild {
-  width: 45%;
-}
-@media (max-width: 992px) {
-  .eventsexpertise-vorschaubild {
-    width: 100%;
-  }
-  .eventsexpertise-vorschaubild img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.eventsexpertise-preview {
-  width: 55%;
+.fachwissen-preview {
+  max-width: 800px;
   background: #F3F3F3;
   padding: 1.25rem;
   position: relative;
 }
-.eventsexpertise-preview .eventsexpertise-preview-content {
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  padding-right: 1.25rem;
-}
-@media (max-width: 992px) {
-  .eventsexpertise-preview {
-    width: 100%;
-  }
-  .eventsexpertise-preview .eventsexpertise-preview-content {
-    top: 0;
-    transform: none;
-    position: relative;
-  }
+.fachwissen-preview .fachwissen-preview-content {
+  background-color: transparent;
 }
 
-.eventsexpertise-date {
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 3px;
-}
-
-.eventsexpertise-title {
-  font-size: 1.625rem;
+.fachwissen-title {
+  font-size: 1.1rem;
   font-weight: 700;
   margin-top: 0;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
-.eventsexpertise-title a {
+.fachwissen-title a {
   text-decoration: none;
 }
 
-.eventsexpertise-excerpt {
+.fachwissen-excerpt {
   font-size: 1rem;
   font-weight: 400;
   margin-right: 0.75em;
 }
 
-/* Single eventsexpertise */
-.single-eventsexpertise-page {
+/* Single fachwissen */
+.single-fachwissen-page {
   padding-top: 0;
   padding-bottom: 0;
   background-color: #F3F3F3;
 }
 
-h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
+h1.fachwissen-single-h1-title, .fachwissen-single-h1-title.h1 {
   font-size: 2.25em;
   text-transform: none;
   font-weight: 700;
 }
 
-#eventsexpertise-single-header-wrapper {
+#fachwissen-single-header-wrapper {
   position: relative;
   box-sizing: border-box;
   left: calc(50% - 50vw);
@@ -15528,7 +15497,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   margin-bottom: -4.5rem;
 }
 
-.eventsexpertise-single-header-image {
+.fachwissen-single-header-image {
   position: absolute;
   background-size: cover;
   background-repeat: repeat;
@@ -15541,7 +15510,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   right: 0;
   left: 0;
 }
-.eventsexpertise-single-header-image .eventsexpertise-single-image-overlay {
+.fachwissen-single-header-image .fachwissen-single-image-overlay {
   background: #0060AF;
   opacity: 0.5;
   color: inherit;
@@ -15552,7 +15521,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   top: 0;
 }
 
-.eventsexpertise-single-header-info-wrapper {
+.fachwissen-single-header-info-wrapper {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -15562,20 +15531,20 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding-top: 0;
   padding-bottom: 0;
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox {
   padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox {
+  .fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox {
     padding: 1rem 3rem 1rem 3rem;
   }
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox .eventsexpertise-single-header-meta-info {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox .fachwissen-single-header-meta-info {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 400;
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox .eventsexpertise-single-header-meta-info .eventsexpertise-tag-single-page {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox .fachwissen-single-header-meta-info .fachwissen-tag-single-page {
   color: white;
   border-radius: 2rem;
   text-transform: uppercase;
@@ -15589,21 +15558,21 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
   display: inline-block;
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox .eventsexpertise-single-header-meta-info .eventsexpertise-tag-single-page:hover {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox .fachwissen-single-header-meta-info .fachwissen-tag-single-page:hover {
   background: #002e54;
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox .eventsexpertise-single-header-meta-info .eventsexpertise-tag-single-page a {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox .fachwissen-single-header-meta-info .fachwissen-tag-single-page a {
   color: white;
   text-decoration: none;
 }
-.eventsexpertise-single-header-info-wrapper .eventsexpertise-single-header-meta-infobox .eventsexpertise-single-header-meta-info .eventsexpertise-single-header-meta-info-date {
+.fachwissen-single-header-info-wrapper .fachwissen-single-header-meta-infobox .fachwissen-single-header-meta-info .fachwissen-single-header-meta-info-date {
   font-size: 1rem;
   font-weight: 600;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
 
-#eventsexpertise-single-content-wrapper {
+#fachwissen-single-content-wrapper {
   background: white;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
   position: relative;
@@ -15614,24 +15583,24 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   padding: 2em;
 }
 @media (min-width: 768px) {
-  #eventsexpertise-single-content-wrapper {
+  #fachwissen-single-content-wrapper {
     padding: 3em 6em 1em 6em;
   }
 }
-#eventsexpertise-single-content-wrapper h2, #eventsexpertise-single-content-wrapper .h2 {
+#fachwissen-single-content-wrapper h2, #fachwissen-single-content-wrapper .h2 {
   font-size: 1.5em;
   margin-top: 2em;
   margin-bottom: 1em;
 }
-#eventsexpertise-single-content-wrapper h3, #eventsexpertise-single-content-wrapper .h3 {
+#fachwissen-single-content-wrapper h3, #fachwissen-single-content-wrapper .h3 {
   font-size: 1.25em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
-#eventsexpertise-single-content-wrapper .eventsexpertise-lead {
+#fachwissen-single-content-wrapper .fachwissen-lead {
   text-align: center;
 }
-#eventsexpertise-single-content-wrapper .eventsexpertise-lead p {
+#fachwissen-single-content-wrapper .fachwissen-lead p {
   font-size: 1.1em;
   font-weight: 700;
 }
@@ -15711,7 +15680,7 @@ h1.eventsexpertise-single-h1-title, .eventsexpertise-single-h1-title.h1 {
   margin-right: 0.75em;
 }
 
-/* Single eventsexpertise */
+/* Single news and events */
 .single-newsevents-page {
   padding-top: 0;
   padding-bottom: 0;
@@ -16092,11 +16061,11 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   padding-bottom: 0px;
 }
 
-.eventsexpertise-teaser {
+.fachwissen-teaser {
   padding: 1rem;
 }
 
-.eventsexpertise-title > h3, .eventsexpertise-title > .h3 {
+.fachwissen-title > h3, .fachwissen-title > .h3 {
   font-size: 1em;
   font-weight: 700;
 }
@@ -16366,6 +16335,85 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
 
 .subpage-grid a:hover {
   color: #002e54 !important;
+}
+
+.nav-filter {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-filter a {
+  text-decoration: none;
+}
+.nav-filter .nav-filter-title, .nav-filter .nav-filter-title:hover {
+  margin-right: 0.5em;
+  text-transform: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #0060AF;
+  padding-left: 0px;
+}
+
+.nav-filter li {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
+  margin-right: 0.4em;
+  margin-top: 5px;
+  margin-right: 5px;
+  list-style-type: none;
+  background: #0060AF;
+}
+
+.nav-filter li.active {
+  background: #002e54;
+}
+
+.nav-filter li:hover {
+  background: #002e54;
+}
+
+.nav-filter li a:active, .nav-filter li a:focus, .nav-filter li a:link, .nav-filter li a:visited {
+  color: white;
+}
+
+.nav-filter li a:hover {
+  color: white;
+}
+
+.nav-filter a {
+  border: none;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:active, .nav a:focus, .nav a:link, .nav a:visited {
+  color: #999;
+}
+
+.nav .current-menu-item a, .nav a:hover {
+  color: #000;
+}
+
+.status-fachwissen {
+  font-size: 1em;
+  font-weight: 700;
 }
 
 .has-blue-color,

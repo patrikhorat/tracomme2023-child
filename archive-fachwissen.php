@@ -26,7 +26,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 		<div class="row">
 
-				<main class="site-main eventsexpertise-archive-maincontent" id="main">
+				<main class="site-main fachwissen-archive-maincontent" id="main">
 
 					<?php
 					if ( have_posts() ) {
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
 							echo '<h2 class="page-subtitle">';
-							esc_attr_e( 'News, Events, More', 'tracomme2023-child' );
+							esc_attr_e( 'Cognitive Canvas: Painting with the Palette of Expertise', 'tracomme2023-child' );
 							echo '</h2>';
 							?>
 							<div class="sharethis-container margin-bottom-16">
@@ -43,22 +43,23 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 							</div>
 						</header><!-- .page-header -->
 						<?php  
+						echo do_shortcode('[ajax_filter_posts per_page="-1"]');
 						//Start the loop.
-						while ( have_posts() ) {
-							the_post();						
-							/*
-								* Include the Post-Format-specific template for the content.
-								* If you want to override this in a child theme, then include a file
-								* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-								*/
-							get_template_part( 'loop-templates/content', 'events-expertise' );
-							
-						}
-					} else {
+						//while ( have_posts() ) {
+						//	the_post();						
+						//	/*
+						//		* Include the Post-Format-specific template for the content.
+						//		* If you want to override this in a child theme, then include a file
+						//		* called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						//		*/
+						//	get_template_part( 'loop-templates/content', 'fachwissen' );
+						//	
+						//}
+						} else {
 						get_template_part( 'loop-templates/content', 'none' );
 					}
 
-				tracomme2023child_pagination();
+				//tracomme2023child_pagination();
 				?>
 				</main><!-- #main -->
 				
@@ -66,14 +67,14 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 				<?php 	// Get the Content Box for Footer in correct language or German
 				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 				if ($my_current_lang == "de") {
-					$contentbox = get_page_by_path( 'teaser-eventsexpertise-archive', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
 				}
 				else if ($my_current_lang == "en")
 				{
-					$contentbox = get_page_by_path( 'teaser-eventsexpertise-archive-en', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive-en', '', 'content-boxen' );
 				}
 				else {
-					$contentbox = get_page_by_path( 'teaser-eventsexpertise-archive', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
 				}
 				$contentboxid = $contentbox->ID;
 				$post_contentbox = get_post($contentboxid);

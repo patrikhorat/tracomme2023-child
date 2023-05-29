@@ -147,12 +147,11 @@ function change_vc_button_colors() {
 
 
 /* Events&Expertise Image */
-/* Image Size for "Online Artikel" Archive & Single Page */
-add_image_size( 'eventsexpertise-archive-image', 960, 600, true );
-add_image_size( 'eventsexpertise-single-image', 1920, 800, true );
+/* Image Size for Custom Post Types */
 add_image_size( 'newsevents-archive-image', 960, 600, true );
 add_image_size( 'newsevents-single-image', 1920, 800, true );
 add_image_size( 'produkte-featured-image', 960, 960, true );
+add_image_size( 'fachwissen-archive-image', 200, 200, true );
 
 
 // get rid of the “Category:”, “Tag:”, “Author:”, “Archives:” and “Other taxonomy name:”
@@ -355,5 +354,194 @@ if ( ! function_exists( 'tracomme_get_the_term_buttons_extern' ) ) {
 		endif;
 	}
 	}
+
+/* Sortierung Fachwissen Alphabetisch */
+add_action( 'pre_get_posts', 'my_change_sort_order'); 
+function my_change_sort_order($query){
+	if(is_post_type_archive( 'fachwissen' )):
+		//If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+		//Set the order ASC or DESC
+		$query->set( 'order', 'ASC' );
+		//Set the orderby
+		$query->set( 'orderby', 'title' );
+	endif;    
+};
+
+
+/* Pagination Fachwissen entfernen*/
+function remove_pagination_from_post_type( $query ) {
+    if ( is_post_type_archive( 'fachwissen' ) ) {
+        $query->set( 'posts_per_page', -1 );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'remove_pagination_from_post_type', 1 );
+
+/* Ajax Filtering */
+
+function assets() {
+
+    wp_enqueue_script('tuts/js', get_stylesheet_directory_uri() . '/js/ajax-filter-post.js', ['jquery'], null, true);
+    wp_enqueue_script('tuts/js', get_stylesheet_directory_uri() . '/js/jquery.ba-hashchange.js', ['jquery'], null, true);
+
+    wp_localize_script( 'tuts/js', 'bobz', array(
+        'nonce'    => wp_create_nonce( 'bobz' ),
+        'ajax_url' => admin_url( 'admin-ajax.php' )
+    ));
+}
+add_action('wp_enqueue_scripts', 'assets', 100);
+
+/* Ajax Filtering */
+function vb_filter_posts() {
+
+    if( !isset( $_POST['nonce'] ) || !wp_verify_nonce( $_POST['nonce'], 'bobz' ) )
+        die('Permission denied');
+
+    /**
+     * Default response
+     */
+    $response = [
+        'status'  => 500,
+        'message' => 'Something is wrong, please try again later ...',
+        'content' => false,
+        'found'   => 0
+    ];
+
+    $tax  = sanitize_text_field($_POST['params']['tax']);
+    $term = sanitize_text_field($_POST['params']['term']);
+    $page = intval($_POST['params']['page']);
+    $qty  = intval($_POST['params']['qty']);
+
+    /**
+     * Check if term exists
+     */
+    if (!term_exists( $term, $tax) && $term != 'all-terms') :
+        $response = [
+            'status'  => 501,
+            'message' => 'Term doesn\'t exist',
+            'content' => 0
+        ];
+
+        die(json_encode($response));
+    endif;
+
+    if ($term == 'all-terms') : 
+
+        $tax_qry[] = [
+            'taxonomy' => $tax,
+            'field'    => 'slug',
+            'terms'    => $term,
+            'operator' => 'NOT IN'
+        ];
+
+    else :
+
+        $tax_qry[] = [
+            'taxonomy' => $tax,
+            'field'    => 'slug',
+            'terms'    => $term,
+        ];
+
+    endif;
+
+    /**
+     * Setup query
+     */
+    $args = [
+        'paged'          => $page,
+        'post_type'      => 'fachwissen',
+        'post_status'    => 'publish',
+        'posts_per_page' => $qty,
+        'tax_query'      => $tax_qry,
+		'orderby'        => 'title',
+   		'order'          => 'asc',
+
+    ];
+
+    $qry = new WP_Query($args);
+
+    ob_start();
+        if ($qry->have_posts()) :
+            while ($qry->have_posts()) : $qry->the_post(); ?>
+			<?php get_template_part( 'loop-templates/content', 'fachwissen' ); ?>
+            <?php endwhile;
+
+            /**
+             * Pagination
+             */
+            //vb_ajax_pager($qry,$page);
+
+            $response = [
+                'status'=> 200,
+                'found' => $qry->found_posts
+            ];
+
+            
+        else :
+
+            $response = [
+                'status'  => 201,
+                'message' => 'No posts found'
+            ];
+
+        endif;
+
+    $response['content'] = ob_get_clean();
+
+    die(json_encode($response));
+
+}
+add_action('wp_ajax_do_filter_posts', 'vb_filter_posts');
+add_action('wp_ajax_nopriv_do_filter_posts', 'vb_filter_posts');
+
+
+/**
+ * Shortocde for displaying terms filter and results on page
+ */
+function vb_filter_posts_sc($atts) {
+
+    $a = shortcode_atts( array(
+        'tax'      => 'post_tag', // Taxonomy
+        'terms'    => false, // Get specific taxonomy terms only
+        'active'   => false, // Set active term by ID
+        'per_page' => -1 // How many posts per page
+    ), $atts );
+
+    $result = NULL;
+    $terms  = get_terms($a['tax']);
+
+    if (count($terms)) :
+        ob_start(); ?>
+            <div id="container-async" data-paged="<?php echo $a['per_page']; ?>" class="sc-ajax-filter">
+                <ul class="nav-filter">
+					<li class="nav-filter-title"><?php esc_attr_e( 'Keywords', 'tracomme2023-child' ); ?>
+					</li>
+					<li>
+                        <a href="#" data-filter="<?= $terms[0]->taxonomy; ?>" data-term="all-terms" data-page="1">
+                            <?php esc_attr_e( 'Show all', 'tracomme2023-child' ); ?>
+                        </a>
+                    </li>
+                    <?php foreach ($terms as $term) : ?>
+                        <li<?php if ($term->term_id == $a['active']) :?> class="active"<?php endif; ?>>
+                            <a href="<?php echo get_term_link( $term, $term->taxonomy ); ?>" data-filter="<?php echo $term->taxonomy; ?>" data-term="<?php echo $term->slug; ?>" data-page="1">
+                                <?php echo $term->name; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <div class="status status-fachwissen"></div>
+                <div class="content"></div>
+            </div>
+        
+        <?php $result = ob_get_clean();
+    endif;
+
+    return $result;
+}
+add_shortcode( 'ajax_filter_posts', 'vb_filter_posts_sc');
+
+
+
 
 ?>

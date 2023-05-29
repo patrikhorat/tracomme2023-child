@@ -402,87 +402,58 @@ h3.frontpage-subsectiontitle {
     padding: 0;
 }
 
-/* styling for events & expertise */
-.eventsexpertise-archive-maincontent {
+/* styling for fachwissen */
+.fachwissen-archive-maincontent {
     margin-bottom: 4rem;
 }
 
-.eventsexpertise-wrapper {
-    display: flex;
-    flex-direction: row;
-    padding-top: 0.75em;
+.fachwissen-wrapper {
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding-top: 1.5em;
     padding-bottom: 0;
-    @media (max-width: $mediumscreen){
-        flex-direction: column;
-    }
-
 }
-.eventsexpertise-vorschaubild {
-    width: 45%;
-    @media (max-width: $mediumscreen){
-        width: 100%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    
+.fachwissen-vorschaubild {
+    width: 100px;   
 }
-.eventsexpertise-preview {
-    width: 55%;
+.fachwissen-preview {
+    max-width: 800px;
     background: $lightgreybg;
     padding: 1.25rem;
     position: relative;
-    .eventsexpertise-preview-content {
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute;
-        padding-right: 1.25rem;
-    }
-    @media (max-width: $mediumscreen){
-        width: 100%;
-        // zentrierung vertikal
-        .eventsexpertise-preview-content {
-            top: 0;
-            transform: none;
-            position: relative;
-        }
-        
+    .fachwissen-preview-content {
+        background-color: transparent;
     }
 }
-.eventsexpertise-date {
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 3px;
-}
-.eventsexpertise-title {
-    font-size: 1.625rem;
+.fachwissen-title {
+    font-size: 1.1rem;
     font-weight: 700;
     margin-top: 0;
+    hyphens: auto;
 }
-.eventsexpertise-title a {
+.fachwissen-title a {
     text-decoration: none;
 }
-.eventsexpertise-excerpt {
+.fachwissen-excerpt {
     font-size: 1rem;
     font-weight: 400;
     margin-right: 0.75em;
 }
 
-/* Single eventsexpertise */
-.single-eventsexpertise-page {
+/* Single fachwissen */
+.single-fachwissen-page {
     padding-top: 0;
     padding-bottom: 0;
     background-color: $lightgreybg;
 }
 
-h1.eventsexpertise-single-h1-title {
+h1.fachwissen-single-h1-title {
     font-size: 2.25em;
     text-transform: none;
     font-weight: 700;
 }
 
-#eventsexpertise-single-header-wrapper {
+#fachwissen-single-header-wrapper {
     position: relative;
     box-sizing: border-box;
     left: calc(50% - 100vw/2);
@@ -495,7 +466,7 @@ h1.eventsexpertise-single-h1-title {
     height: 40vh;
     margin-bottom: -4.5rem;
 }
-.eventsexpertise-single-header-image {
+.fachwissen-single-header-image {
     position: absolute;
     background-size: cover;
     background-repeat: repeat;
@@ -507,7 +478,7 @@ h1.eventsexpertise-single-h1-title {
     bottom: 0;
     right: 0;
     left: 0;
-    .eventsexpertise-single-image-overlay {
+    .fachwissen-single-image-overlay {
         background: $primary;
         opacity: 0.5;
         color: inherit;
@@ -518,7 +489,7 @@ h1.eventsexpertise-single-h1-title {
         top: 0;
     }
 }
-.eventsexpertise-single-header-info-wrapper {
+.fachwissen-single-header-info-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -527,16 +498,16 @@ h1.eventsexpertise-single-h1-title {
     max-width: $mediumscreen;
     padding-top: 0;
     padding-bottom: 0;
-    .eventsexpertise-single-header-meta-infobox {
+    .fachwissen-single-header-meta-infobox {
         padding-bottom: 1rem;
         @media (min-width: $smallscreen){
             padding: 1rem 3rem 1rem 3rem;
         }
-        .eventsexpertise-single-header-meta-info {
+        .fachwissen-single-header-meta-info {
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
             font-weight: 400;
-            .eventsexpertise-tag-single-page {
+            .fachwissen-tag-single-page {
                 color: white;
                 border-radius: 2rem;
                 text-transform: uppercase;
@@ -550,14 +521,14 @@ h1.eventsexpertise-single-h1-title {
                 box-shadow: 0px 3px 3px #00000029;
                 display: inline-block;
             }
-            .eventsexpertise-tag-single-page:hover {
+            .fachwissen-tag-single-page:hover {
                 background: $secondary;
             }
-            .eventsexpertise-tag-single-page a {
+            .fachwissen-tag-single-page a {
                 color: white;
                 text-decoration: none;
             }
-            .eventsexpertise-single-header-meta-info-date {
+            .fachwissen-single-header-meta-info-date {
                 font-size: 1rem;
                 font-weight: 600;
                 padding-top: 0.25em;
@@ -568,7 +539,7 @@ h1.eventsexpertise-single-h1-title {
 
 }
 
-#eventsexpertise-single-content-wrapper {
+#fachwissen-single-content-wrapper {
     background: white;
     box-shadow: 0px 3px 3px #00000029;
     position: relative;
@@ -590,7 +561,7 @@ h1.eventsexpertise-single-h1-title {
         margin-top: 1.5em;
         margin-bottom: 0.5em;
     }
-    .eventsexpertise-lead {
+    .fachwissen-lead {
         text-align: center;
         p {
             font-size: 1.1em;
@@ -666,7 +637,7 @@ h1.eventsexpertise-single-h1-title {
     margin-right: 0.75em;
 }
 
-/* Single eventsexpertise */
+/* Single news and events */
 .single-newsevents-page {
     padding-top: 0;
     padding-bottom: 0;
@@ -1030,10 +1001,10 @@ h1.produkte-single-h1-title {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.eventsexpertise-teaser {
+.fachwissen-teaser {
     padding: 1rem;
 }
-.eventsexpertise-title > h3 {
+.fachwissen-title > h3 {
     font-size: 1em;
     font-weight: 700;
 }
@@ -1264,4 +1235,88 @@ h1.produkte-single-h1-title {
 }
 .subpage-grid a:hover {
     color: $secondary !important;
+}
+
+
+
+// Filter Navigation for Fachwissen
+.nav-filter {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: 700;
+    a {
+        text-decoration: none;
+    }
+    .nav-filter-title, .nav-filter-title:hover {
+        margin-right: 0.5em;
+        text-transform: none;
+        background-color: transparent;
+        box-shadow: none;
+        color: $primary;
+        padding-left: 0px;
+    }
+}
+
+.nav-filter li {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: 700;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    box-shadow: 0px 3px 3px #00000029;
+    margin-right: 0.4em;
+    margin-top: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+    background: $primary;
+}
+
+.nav-filter li.active {
+    background: $secondary;
+}
+
+.nav-filter li:hover {
+    background: $secondary;
+}
+
+.nav-filter li a:active, .nav-filter li a:focus, .nav-filter li a:link, .nav-filter li a:visited {
+    color: white;
+}
+
+.nav-filter li a:hover {
+    color: white;
+}
+
+.nav-filter a {
+    border: none;
+}
+.nav li {
+    list-style-type: none;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav a:active, .nav a:focus, .nav a:link, .nav a:visited {
+    color: #999;
+}
+
+.nav .current-menu-item a, .nav a:hover {
+    color: #000;
+}
+
+.status-fachwissen {
+    font-size: 1em;
+    font-weight: 700;
 }
