@@ -14,7 +14,8 @@ $post_type_obj = get_post_type_object( get_post_type() );
 
 //Get post type's label
 $archive_title = apply_filters('post_type_archive_title', $post_type_obj->labels->name );
-$archive_link = apply_filters('get_post_type_archive_link', $post_type );
+//$archive_link = apply_filters('get_post_type_archive_link', $post_type );
+$archive_link = get_post_type_archive_link( 'fachwissen' );
 
 //Get Meta Value File Link
 $fachwissen_file = get_post_meta($post->ID, 'fachwissen_file', true);
