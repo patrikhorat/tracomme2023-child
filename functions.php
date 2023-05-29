@@ -504,7 +504,10 @@ function vb_filter_posts_sc($atts) {
         'tax'      => 'post_tag', // Taxonomy
         'terms'    => false, // Get specific taxonomy terms only
         'active'   => false, // Set active term by ID
-        'per_page' => -1 // How many posts per page
+        'per_page' => -1, // How many posts per page
+		'orderby'  => 'title',
+   		'order'    => 'asc'
+
     ), $atts );
 
     $result = NULL;
