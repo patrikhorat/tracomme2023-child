@@ -73,14 +73,14 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 				<?php 	// Get the Content Box for Footer in correct language or German
 				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 				if ($my_current_lang == "de") {
-					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents', '', 'content-boxen' );
 				}
 				else if ($my_current_lang == "en")
 				{
-					$contentbox = get_page_by_path( 'teaser-newsevents-archive-en', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents-en', '', 'content-boxen' );
 				}
 				else {
-					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
+					$contentbox = get_page_by_path( 'teaser-newsevents', '', 'content-boxen' );
 				}
 				$contentboxid = $contentbox->ID;
 				$post_contentbox = get_post($contentboxid);
