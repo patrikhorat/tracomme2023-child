@@ -16119,7 +16119,7 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
 
 /* Bluebox, Overview Dienstleistungen/Fachgebiete etc. */
 .infobox-subpage {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 @media (max-width: 768px) {
   .infobox-subpage {
@@ -16129,15 +16129,21 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
 }
 
 .infobox-subpage > .vc_column-inner {
+  padding: 0 !important;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
+}
+
+.infobox-subpage .ult-content-box {
   text-align: center;
+  height: 100%;
+  color: #ffffff !important;
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   padding-top: 3rem !important;
   padding-bottom: 1.5rem !important;
 }
 @media (max-width: 768px) {
-  .infobox-subpage > .vc_column-inner {
+  .infobox-subpage .ult-content-box {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     padding-top: 2rem !important;
