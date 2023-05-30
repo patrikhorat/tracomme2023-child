@@ -15209,6 +15209,11 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
   padding-bottom: 0px;
 }
 
+#search-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 /* Styling Footer Row */
 .footerrowbg {
   background-color: #0060AF;
@@ -15428,6 +15433,10 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 
 /* styling for fachwissen */
 .fachwissen-archive-maincontent {
+  margin-bottom: 4rem;
+}
+
+.search-maincontent {
   margin-bottom: 4rem;
 }
 

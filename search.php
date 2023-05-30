@@ -21,7 +21,7 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 		<div class="row">
 
-			<main class="site-main" id="main">
+			<main class="site-main search-maincontent" id="main">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -61,19 +61,34 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
 				<?php endif; ?>
+				<?php
+				// Display the pagination component.
+				tracomme2023_pagination();
 
+				?>
 			</main>
 
-			<?php
-			// Display the pagination component.
-			tracomme2023_pagination();
 
-			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
-			?>
-
-		</div><!-- .row -->
-
+			<div class="teaser-box">
+				<?php 	// Get the Content Box for Footer in correct language or German
+				$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+				if ($my_current_lang == "de") {
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
+				}
+				else if ($my_current_lang == "en")
+				{
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive-en', '', 'content-boxen' );
+				}
+				else {
+					$contentbox = get_page_by_path( 'teaser-newsevents-archive', '', 'content-boxen' );
+				}
+				$contentboxid = $contentbox->ID;
+				$post_contentbox = get_post($contentboxid);
+				$content_contentbox = $post_contentbox->post_content;
+				echo do_shortcode($content_contentbox);
+				?>
+			</div>
+			</div><!-- .row -->
 	</div><!-- #content -->
 
 </div><!-- #search-wrapper -->
