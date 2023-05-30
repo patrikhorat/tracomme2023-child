@@ -15095,7 +15095,7 @@ h3.frontpage-subsectiontitle, .frontpage-subsectiontitle.h3 {
 .linkbutton a, .linkbutton a:hover, .linkbutton a:focus {
   color: white;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .linkbutton {
     padding-left: 1rem;
     padding-right: 1rem;
