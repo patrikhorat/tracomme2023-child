@@ -21,11 +21,6 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 
 		<div class="row">
 
-			<?php
-			// Do the left sidebar check and open div#primary.
-			get_template_part( 'global-templates/left-sidebar-check' );
-			?>
-
 			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
@@ -36,14 +31,17 @@ $container = get_theme_mod( 'tracomme2023_container_type' );
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'tracomme2023' ),
+									esc_html__( 'Search Results for: %s', 'tracomme2023-child' ),
 									'<span>' . get_search_query() . '</span>'
 								);
 								?>
 							</h1>
 
 					</header><!-- .page-header -->
-
+					<h2 class="page-subtitle"><?php	printf( esc_html__( 'Did not find what you were looking for? Please contact us', 'tracomme2023-child' ),);?></h2>
+					<div class="search-bar-search-page">
+						<?php get_search_form(); ?>
+					</div>
 					<?php /* Start the Loop */ ?>
 					<?php
 					while ( have_posts() ) :

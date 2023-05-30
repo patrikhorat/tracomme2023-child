@@ -1320,3 +1320,67 @@ h1.produkte-single-h1-title {
     font-size: 1em;
     font-weight: 700;
 }
+
+
+
+/* Search Bar */
+.two-column-languagebar {
+    display: grid;
+    grid-template-columns: auto 100px;
+}
+
+.searchbarsection {
+    width: 100%;
+    .searchbarbox {
+        height: 27px;
+        background: $lightgreybg;
+        color: $primary;
+        display: grid;
+        grid-template-columns: 30px auto;
+        input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-weight: 400;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .fa {
+            padding-right: 0.75em; 
+            padding-left: 0.4em;
+            display: flex;
+            align-items: center;
+        }
+        .search-submit {
+            display: none !important; 
+        }
+    }
+}
+.form-control {
+    border-radius: 0px !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+.search-bar-search-page {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+.search-result-box {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-top: 1px solid #d5d5d5;
+    a {
+        text-decoration: none;
+    }
+}
+.search-result-box:first-of-type {
+    margin-top: 1.75rem;
+}
+.search-result-box:last-child {
+    border-bottom: 1px solid #d5d5d5;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-radius: 0px !important;
+}

@@ -12,7 +12,15 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'tracomme2023_container_type' );
 ?>
 <div class="languagebar">
-	<div class="container">
+	<div class="container two-column-languagebar">
+		<!-- search bar -->
+		<div class="searchbarsection">
+					<div class="searchbarbox">
+						<i class="fa fa-search"></i><?php get_search_form(); ?>
+					</div>
+				</div>
+		<!-- end search bar desktop -->
+		<!-- language switcher -->
 		<?php
 		/* Custom Language Switcher */
 		do_action('wpml_add_language_selector');			

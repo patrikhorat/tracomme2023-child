@@ -544,7 +544,17 @@ function vb_filter_posts_sc($atts) {
 }
 add_shortcode( 'ajax_filter_posts', 'vb_filter_posts_sc');
 
-
+ // contentboxen von Suche ausschliessen
+ add_action( 'init', 'exclude_cpt_search_filter', 99 );
+ function exclude_cpt_search_filter() {
+     global $wp_post_types;
+ 
+     if ( post_type_exists( 'content-boxen' ) ) {
+ 
+         // exclude from search results
+         $wp_post_types['content-boxen']->exclude_from_search = true;
+     }
+ }
 
 
 ?>
