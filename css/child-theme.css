@@ -16310,6 +16310,7 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
 
 .frontpage-infobox > .vc_column-inner {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1607843137);
+  padding: 0 !important;
 }
 
 .frontpage-infobox .ult-content-box {
