@@ -34,6 +34,12 @@ defined( 'ABSPATH' ) || exit;
 					the_excerpt();
 					?>
 				</div>
+				<div class="newsenvents-sharelink">
+					<?php echo '<a href="'.esc_url( get_permalink() ).'" rel="bookmark">'; ?>
+					<i class="fa fa-share-alt" aria-hidden="true"></i>Link
+					<?php echo '</a>'; ?>
+				
+				</div>
 			</div><!-- .entry-content -->
 		</div>
 	</div>

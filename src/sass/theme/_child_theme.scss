@@ -645,7 +645,24 @@ h1.fachwissen-single-h1-title {
     font-weight: 400;
     margin-right: 0.75em;
 }
-
+.newsenvents-sharelink {
+    padding-top: 0.2rem;
+}
+.newsenvents-sharelink a {
+    text-decoration: none;
+    color: $primary;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    font-size: 0.9rem;
+}
+.newsenvents-sharelink .fa {
+    text-decoration: none;
+    color: $primary;
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    vertical-align: bottom;
+}
 /* Single news and events */
 .single-newsevents-page {
     padding-top: 0;
