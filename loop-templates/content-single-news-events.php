@@ -37,14 +37,6 @@ $archive_link = apply_filters('get_post_type_archive_link', $post_type );
 					<div class="newsevents-single-header-meta-info">
 						<?php the_title( '<h1 class="entry-title newsevents-single-h1-title">', '</h1>' ); ?>
 					</div>
-					<div class="newsevents-single-header-meta-info">
-						<?php echo '<div class="newsevents-single-header-meta-info-author">';
-						esc_attr_e( 'Published on', 'tracomme2023-child' );
-						echo ' ';
-						echo get_the_date();
-						echo '</div>';
-						?>
-					</div>
 				</div>
 			</div>
 		</div><!-- .entry-meta -->
