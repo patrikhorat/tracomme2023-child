@@ -15,6 +15,11 @@ html, body {
 .styledark {
     color: #ffffff;
 }
+.styledark a,
+.styledark a:hover,
+.styledark a:active {
+    color: #ffffff;
+}
 .stylelight {
     color: $primary;
 }
@@ -1422,4 +1427,14 @@ h1.produkte-single-h1-title {
 }
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     border-radius: 0px !important;
+}
+
+// Custom Icon Box Title (Offene Stellen)
+.aio-icon-title {
+    font-size: 1.5em !important;
+}
+
+// Custom Text Team
+.people-name {
+	font-weight: 700;
 }
