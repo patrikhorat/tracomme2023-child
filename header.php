@@ -34,10 +34,6 @@ $navbar_type       = get_theme_mod( 'tracomme2023_navbar_type', 'collapse' );
 </head>
 
 <body <?php body_class(); ?> <?php tracomme2023_body_attributes(); ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT5RKW63"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
