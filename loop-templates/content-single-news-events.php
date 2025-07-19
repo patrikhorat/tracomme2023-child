@@ -15,13 +15,29 @@ $post_type_obj = get_post_type_object( get_post_type() );
 //Get post type's label
 $archive_title = apply_filters('post_type_archive_title', $post_type_obj->labels->name );
 $archive_link = apply_filters('get_post_type_archive_link', $post_type );
+
+
+
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 		<div id="newsevents-single-header-wrapper" class="entry-image-wrapper">
-			<div class="newsevents-single-header-image" style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID, 'newsevents-single-image' ); ?>)";>
+			<div class="newsevents-single-header-image" style="background-image: url(
+			<?php
+			//Get Background Image (if available)
+			$second_featured_image_id = get_post_meta(get_the_ID(), 'second_featured_image', true);
+				if ($second_featured_image_id) {
+					$second_featured_image_id_url = wp_get_attachment_image_url($second_featured_image_id, 'newsevents-single-image');
+					echo $second_featured_image_id_url;
+				}
+				else {
+					echo get_the_post_thumbnail_url( $post->ID, 'newsevents-single-image' );
+				};
+			?>
+			)";>
 				<div class="newsevents-single-image-overlay"></div>
 			</div>
 		</div>
