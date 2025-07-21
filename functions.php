@@ -148,7 +148,7 @@ function change_vc_button_colors() {
 
 /* Events&Expertise Image */
 /* Image Size for Custom Post Types */
-add_image_size( 'newsevents-archive-image', 960, 600, true );
+add_image_size( 'newsevents-archive-image', 960, 540, true );
 add_image_size( 'newsevents-single-image', 1920, 800, true );
 add_image_size( 'produkte-featured-image', 960, 960, true );
 add_image_size( 'fachwissen-archive-image', 200, 200, true );
