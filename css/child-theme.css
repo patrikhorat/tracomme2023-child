@@ -16048,6 +16048,7 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
 
 .newsevents-teaser {
   padding: 1rem;
+  min-height: 200px;
 }
 
 .newsevents-title > h3, .newsevents-title > .h3 {
