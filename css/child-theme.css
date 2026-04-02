@@ -16540,6 +16540,24 @@ h1.produkte-single-h1-title, .produkte-single-h1-title.h1 {
   font-weight: 700;
 }
 
+.vc_pageable-slide-wrapper {
+  display: flex;
+}
+
+.vc_grid-item {
+  display: flex;
+}
+
+.vc_grid-item-mini {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vc_gitem-zone-c {
+  flex-grow: 1;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

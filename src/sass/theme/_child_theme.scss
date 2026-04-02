@@ -1439,3 +1439,22 @@ h1.produkte-single-h1-title {
 .people-name {
 	font-weight: 700;
 }
+
+// Fix für News Boxen
+.vc_pageable-slide-wrapper {
+  display: flex;
+}
+
+.vc_grid-item {
+  display: flex;
+}
+
+.vc_grid-item-mini {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vc_gitem-zone-c {
+  flex-grow: 1;
+}
